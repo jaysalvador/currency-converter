@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct Currency: Codable {
+/// Codable for Currency Object
+
+public struct Currency: Codable {
+    
+    // MARK: - Attributes
     
     var currencyCode: String?
     var currencyName: String?
@@ -23,6 +27,9 @@ struct Currency: Codable {
     var updateDate: Date?
     var lastUpdated: Date?
 
+    // MARK: - Coding Keys
+    
+    // all fields are camel-cased
     enum CodingKeys: String, CodingKey {
         
         case currencyCode
@@ -39,7 +46,8 @@ struct Currency: Codable {
         case lastUpdated = "LASTUPDATED"
     }
 
-    init(from decoder: Decoder) throws {
+    // decoder override to handle dates and numbers
+    public init(from decoder: Decoder) throws {
 
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -60,7 +68,9 @@ struct Currency: Codable {
 
 extension Currency: Equatable {
     
-    static func == (lhs: Currency, rhs: Currency) -> Bool {
+    // add equatable to compare Currency objects
+    
+    public static func == (lhs: Currency, rhs: Currency) -> Bool {
         
         guard let lhsCurrencyCode = lhs.currencyCode, let rhsCurrencyCode = rhs.currencyCode else {
             

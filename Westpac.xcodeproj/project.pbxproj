@@ -18,6 +18,9 @@
 		B5AAF11F241855ED0034645A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF11B241855ED0034645A /* String.swift */; };
 		B5AAF120241855ED0034645A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF11C241855ED0034645A /* DateFormatter.swift */; };
 		B5AAF1212418564A0034645A /* libCurrency.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AAF110241855C40034645A /* libCurrency.a */; };
+		B5AAF12424185AAB0034645A /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF12324185AAB0034645A /* DispatchQueue.swift */; };
+		B5AAF12624185BD50034645A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF12524185BD50034645A /* HttpClient.swift */; };
+		B5AAF12824185BE60034645A /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF12724185BE60034645A /* HttpError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		B5AAF11A241855ED0034645A /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
 		B5AAF11B241855ED0034645A /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B5AAF11C241855ED0034645A /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		B5AAF12324185AAB0034645A /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		B5AAF12524185BD50034645A /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B5AAF12724185BE60034645A /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,9 +189,10 @@
 		B5AAF119241855ED0034645A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B5AAF11C241855ED0034645A /* DateFormatter.swift */,
+				B5AAF12324185AAB0034645A /* DispatchQueue.swift */,
 				B5AAF11A241855ED0034645A /* KeyedDecodingContainer.swift */,
 				B5AAF11B241855ED0034645A /* String.swift */,
-				B5AAF11C241855ED0034645A /* DateFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,6 +200,8 @@
 		B5AAF1222418566D0034645A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B5AAF12524185BD50034645A /* HttpClient.swift */,
+				B5AAF12724185BE60034645A /* HttpError.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -374,8 +383,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5AAF120241855ED0034645A /* DateFormatter.swift in Sources */,
+				B5AAF12824185BE60034645A /* HttpError.swift in Sources */,
 				B5AAF11F241855ED0034645A /* String.swift in Sources */,
 				B5AAF11D241855ED0034645A /* Currency.swift in Sources */,
+				B5AAF12424185AAB0034645A /* DispatchQueue.swift in Sources */,
+				B5AAF12624185BD50034645A /* HttpClient.swift in Sources */,
 				B5AAF11E241855ED0034645A /* KeyedDecodingContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
