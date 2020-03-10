@@ -13,6 +13,11 @@
 		B5AAF0A424183EBB0034645A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF0A224183EBB0034645A /* LaunchScreen.storyboard */; };
 		B5AAF0AF24183EBB0034645A /* WestpacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF0AE24183EBB0034645A /* WestpacTests.swift */; };
 		B5AAF0BA24183EBB0034645A /* WestpacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF0B924183EBB0034645A /* WestpacUITests.swift */; };
+		B5AAF11D241855ED0034645A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF118241855ED0034645A /* Currency.swift */; };
+		B5AAF11E241855ED0034645A /* KeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF11A241855ED0034645A /* KeyedDecodingContainer.swift */; };
+		B5AAF11F241855ED0034645A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF11B241855ED0034645A /* String.swift */; };
+		B5AAF120241855ED0034645A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF11C241855ED0034645A /* DateFormatter.swift */; };
+		B5AAF1212418564A0034645A /* libCurrency.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AAF110241855C40034645A /* libCurrency.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B5AAF10E241855C40034645A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B5AAF09424183EBA0034645A /* Westpac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westpac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AAF09724183EBA0034645A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +62,11 @@
 		B5AAF0B524183EBB0034645A /* WestpacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WestpacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AAF0B924183EBB0034645A /* WestpacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestpacUITests.swift; sourceTree = "<group>"; };
 		B5AAF0BB24183EBB0034645A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AAF110241855C40034645A /* libCurrency.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCurrency.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AAF118241855ED0034645A /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		B5AAF11A241855ED0034645A /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		B5AAF11B241855ED0034645A /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B5AAF11C241855ED0034645A /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AAF1212418564A0034645A /* libCurrency.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +92,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5AAF10D241855C40034645A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B5AAF08B24183EBA0034645A = {
 			isa = PBXGroup;
 			children = (
+				B5AAF111241855C40034645A /* Currency */,
 				B5AAF09624183EBA0034645A /* Westpac */,
 				B5AAF0AD24183EBB0034645A /* WestpacTests */,
 				B5AAF0B824183EBB0034645A /* WestpacUITests */,
@@ -88,6 +119,7 @@
 				B5AAF09424183EBA0034645A /* Westpac.app */,
 				B5AAF0AA24183EBB0034645A /* WestpacTests.xctest */,
 				B5AAF0B524183EBB0034645A /* WestpacUITests.xctest */,
+				B5AAF110241855C40034645A /* libCurrency.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +160,41 @@
 				B5AAF0A024183EBB0034645A /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5AAF111241855C40034645A /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				B5AAF1222418566D0034645A /* API */,
+				B5AAF119241855ED0034645A /* Extensions */,
+				B5AAF117241855ED0034645A /* Models */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		B5AAF117241855ED0034645A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5AAF118241855ED0034645A /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5AAF119241855ED0034645A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5AAF11A241855ED0034645A /* KeyedDecodingContainer.swift */,
+				B5AAF11B241855ED0034645A /* String.swift */,
+				B5AAF11C241855ED0034645A /* DateFormatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5AAF1222418566D0034645A /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +253,23 @@
 			productReference = B5AAF0B524183EBB0034645A /* WestpacUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B5AAF10F241855C40034645A /* Currency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AAF114241855C40034645A /* Build configuration list for PBXNativeTarget "Currency" */;
+			buildPhases = (
+				B5AAF10C241855C40034645A /* Sources */,
+				B5AAF10D241855C40034645A /* Frameworks */,
+				B5AAF10E241855C40034645A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Currency;
+			productName = Currency;
+			productReference = B5AAF110241855C40034645A /* libCurrency.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +291,9 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = B5AAF09324183EBA0034645A;
 					};
+					B5AAF10F241855C40034645A = {
+						CreatedOnToolsVersion = 11.1;
+					};
 				};
 			};
 			buildConfigurationList = B5AAF08F24183EBA0034645A /* Build configuration list for PBXProject "Westpac" */;
@@ -225,6 +312,7 @@
 				B5AAF09324183EBA0034645A /* Westpac */,
 				B5AAF0A924183EBB0034645A /* WestpacTests */,
 				B5AAF0B424183EBB0034645A /* WestpacUITests */,
+				B5AAF10F241855C40034645A /* Currency */,
 			);
 		};
 /* End PBXProject section */
@@ -278,6 +366,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5AAF0BA24183EBB0034645A /* WestpacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AAF10C241855C40034645A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AAF120241855ED0034645A /* DateFormatter.swift in Sources */,
+				B5AAF11F241855ED0034645A /* String.swift in Sources */,
+				B5AAF11D241855ED0034645A /* Currency.swift in Sources */,
+				B5AAF11E241855ED0034645A /* KeyedDecodingContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +635,30 @@
 			};
 			name = Release;
 		};
+		B5AAF115241855C40034645A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5AAF116241855C40034645A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +694,15 @@
 			buildConfigurations = (
 				B5AAF0C524183EBB0034645A /* Debug */,
 				B5AAF0C624183EBB0034645A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AAF114241855C40034645A /* Build configuration list for PBXNativeTarget "Currency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AAF115241855C40034645A /* Debug */,
+				B5AAF116241855C40034645A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
