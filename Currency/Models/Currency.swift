@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Codable for Currency Object
 
@@ -93,10 +94,10 @@ extension Currency {
             currencyCode: "AUD",
             currencyName: "Dollars",
             country: "Australia",
-            buyTT: nil,
-            sellTT: nil,
-            buyTC: nil,
-            buyNotes: nil,
+            buyTT: 1.00,
+            sellTT: 1.00,
+            buyTC: 1.00,
+            buyNotes: 1.00,
             sellNotes: nil,
             spotRateDate: nil,
             effectiveDate: nil,
@@ -119,10 +120,18 @@ extension Currency {
         return self.currencyCode?.uppercased() == "XAU"
     }
     
+    public var hasPrice: Bool {
+        
+        return self.sellTT != nil
+    }
+    
     /// converts a `Currency` struct to AUD
     public var toAUD: Currency {
         
         var AUD = Currency.AUD
+        
+        AUD.sellTT = nil
+        AUD.buyTT = nil
         
         if let buyTT = self.buyTT, buyTT > 0 {
             
@@ -139,6 +148,28 @@ extension Currency {
         AUD.lastUpdated = self.lastUpdated
         
         return AUD
+    }
+    
+    public var description: String {
+        
+        var description: String = ""
+        
+        if let country = self.country {
+        
+            description = country
+        }
+        
+        if let currency = self.currencyName, !self.isGold {
+             
+            description += (description != "" ? " " : "") + currency
+        }
+        
+        return description
+    }
+    
+    public var image: UIImage? {
+        
+        return UIImage(named: "\(self.currencyCode ?? "")")
     }
 }
 

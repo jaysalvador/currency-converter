@@ -38,6 +38,11 @@
 		B5DDFDD524187B3F007AD04B /* CurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DDFDD124187B3F007AD04B /* CurrencyViewController.xib */; };
 		B5DDFDD624187B3F007AD04B /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDD224187B3F007AD04B /* CurrencyViewModel.swift */; };
 		B5DDFDDA24188311007AD04B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDD924188311007AD04B /* Double.swift */; };
+		B5DDFDDD2418968B007AD04B /* CurrencySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDDB2418968B007AD04B /* CurrencySelectViewController.swift */; };
+		B5DDFDDE2418968B007AD04B /* CurrencySelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DDFDDC2418968B007AD04B /* CurrencySelectViewController.xib */; };
+		B5DDFDE3241897E0007AD04B /* CurrencySelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDE1241897E0007AD04B /* CurrencySelectCell.swift */; };
+		B5DDFDE4241897E0007AD04B /* CurrencySelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DDFDE2241897E0007AD04B /* CurrencySelectCell.xib */; };
+		B5DDFDEA2418AF8F007AD04B /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDE92418AF8F007AD04B /* Bool.swift */; };
 		BC58A7ACE63662ADB2BCD3DD /* Pods_Westpac_WestpacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E509BE257C77F8222473D7D6 /* Pods_Westpac_WestpacUITests.framework */; };
 		C3127815E25107BE22D26AFE /* Pods_Westpac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B45005C31FDB58F00ABCD7 /* Pods_Westpac.framework */; };
 		D79F6CC4474D7068189D471A /* Pods_WestpacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2874AFEC54BEE2E668D117D9 /* Pods_WestpacTests.framework */; };
@@ -121,6 +126,11 @@
 		B5DDFDD124187B3F007AD04B /* CurrencyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencyViewController.xib; sourceTree = "<group>"; };
 		B5DDFDD224187B3F007AD04B /* CurrencyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		B5DDFDD924188311007AD04B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		B5DDFDDB2418968B007AD04B /* CurrencySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectViewController.swift; sourceTree = "<group>"; };
+		B5DDFDDC2418968B007AD04B /* CurrencySelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencySelectViewController.xib; sourceTree = "<group>"; };
+		B5DDFDE1241897E0007AD04B /* CurrencySelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectCell.swift; sourceTree = "<group>"; };
+		B5DDFDE2241897E0007AD04B /* CurrencySelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencySelectCell.xib; sourceTree = "<group>"; };
+		B5DDFDE92418AF8F007AD04B /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 		CF991A5B580BCEB71315D295 /* Pods-Westpac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westpac.release.xcconfig"; path = "Target Support Files/Pods-Westpac/Pods-Westpac.release.xcconfig"; sourceTree = "<group>"; };
 		E509BE257C77F8222473D7D6 /* Pods_Westpac_WestpacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Westpac_WestpacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -281,6 +291,7 @@
 				B5AAF11A241855ED0034645A /* KeyedDecodingContainer.swift */,
 				B5AAF11B241855ED0034645A /* String.swift */,
 				B5AAF12924185D380034645A /* URLSession.swift */,
+				B5DDFDE92418AF8F007AD04B /* Bool.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,6 +322,8 @@
 			children = (
 				B5DDFDBC24187ACD007AD04B /* CurrencyCell.swift */,
 				B5DDFDBB24187ACD007AD04B /* CurrencyCell.xib */,
+				B5DDFDE1241897E0007AD04B /* CurrencySelectCell.swift */,
+				B5DDFDE2241897E0007AD04B /* CurrencySelectCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -333,6 +346,8 @@
 				B5DDFDD024187B3F007AD04B /* CurrencyViewController.swift */,
 				B5DDFDD124187B3F007AD04B /* CurrencyViewController.xib */,
 				B5DDFDD224187B3F007AD04B /* CurrencyViewModel.swift */,
+				B5DDFDDB2418968B007AD04B /* CurrencySelectViewController.swift */,
+				B5DDFDDC2418968B007AD04B /* CurrencySelectViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -469,12 +484,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5AAF13424186CB20034645A /* CircularStd-Bold.otf in Resources */,
+				B5DDFDDE2418968B007AD04B /* CurrencySelectViewController.xib in Resources */,
 				B5AAF0A424183EBB0034645A /* LaunchScreen.storyboard in Resources */,
 				B5AAF13224186CB20034645A /* CircularStd-Book.otf in Resources */,
 				B5AAF13324186CB20034645A /* CircularStd-Black.otf in Resources */,
 				B5AAF0A124183EBB0034645A /* Assets.xcassets in Resources */,
 				B5DDFDD524187B3F007AD04B /* CurrencyViewController.xib in Resources */,
 				B5AAF13524186CB20034645A /* CircularStd-Medium.otf in Resources */,
+				B5DDFDE4241897E0007AD04B /* CurrencySelectCell.xib in Resources */,
 				B5DDFDBD24187ACD007AD04B /* CurrencyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,12 +645,14 @@
 				B5DDFDBE24187ACD007AD04B /* CurrencyCell.swift in Sources */,
 				B5DDFDD624187B3F007AD04B /* CurrencyViewModel.swift in Sources */,
 				B5DDFDC724187AD8007AD04B /* UIFont.swift in Sources */,
+				B5DDFDDD2418968B007AD04B /* CurrencySelectViewController.swift in Sources */,
 				B5DDFDCD24187B2F007AD04B /* UICollectionView.swift in Sources */,
 				B5DDFDC924187AEF007AD04B /* Theme.swift in Sources */,
 				B5DDFDD424187B3F007AD04B /* CurrencyViewController.swift in Sources */,
 				B5DDFDC424187AD8007AD04B /* UIView.swift in Sources */,
 				B5DDFDCC24187B2F007AD04B /* AbstractDiffCalculator.swift in Sources */,
 				B5AAF09824183EBA0034645A /* AppDelegate.swift in Sources */,
+				B5DDFDE3241897E0007AD04B /* CurrencySelectCell.swift in Sources */,
 				B5DDFDD324187B3F007AD04B /* JCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +681,7 @@
 				B5AAF12824185BE60034645A /* HttpError.swift in Sources */,
 				B5AAF12A24185D380034645A /* URLSession.swift in Sources */,
 				B5AAF12C241862270034645A /* CurrencyClient.swift in Sources */,
+				B5DDFDEA2418AF8F007AD04B /* Bool.swift in Sources */,
 				B5AAF11F241855ED0034645A /* String.swift in Sources */,
 				B5AAF11D241855ED0034645A /* Currency.swift in Sources */,
 				B5AAF12424185AAB0034645A /* DispatchQueue.swift in Sources */,

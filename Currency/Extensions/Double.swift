@@ -19,6 +19,8 @@ extension Double {
         formatter.numberStyle = .currency
         formatter.locale = Locale(identifier: "en_US")
         
+        let blank = "-"
+        
         guard let currency = currency else {
             
             return nil
@@ -39,7 +41,7 @@ extension Double {
             
             formatter.currencySymbol = ""
             
-            let formattedString = formatter.string(from: NSNumber(value: self)) ?? "N/A"
+            let formattedString = currency.hasPrice ? formatter.string(from: NSNumber(value: self)) ?? blank : blank
             
             return "\(formattedString) oz"
         }
@@ -50,7 +52,14 @@ extension Double {
             formatter.locale = Locale(identifier: "en_\(countryCode)")
             formatter.currencyCode = currencyCode
             
-            return formatter.string(from: NSNumber(value: self))
+            if currency.hasPrice {
+
+                return formatter.string(from: NSNumber(value: self))
+            }
+            else {
+
+                return (formatter.currencySymbol ?? "") + " " + blank
+            }
         }
     }
     

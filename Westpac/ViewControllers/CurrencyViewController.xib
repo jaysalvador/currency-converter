@@ -15,6 +15,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyViewController" customModule="Westpac" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="PiQ-NY-U7W" id="kPr-zn-P2I"/>
+                <outlet property="currencyImageView" destination="7Dk-99-VIT" id="Ya3-Mh-mrX"/>
+                <outlet property="currencyLabel" destination="QTp-JT-GHK" id="N8H-Oy-Wu2"/>
                 <outlet property="textView" destination="kXW-sY-RKt" id="dpT-M9-tBF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -83,6 +85,9 @@
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPV-Xo-SZJ">
                                     <rect key="frame" x="0.0" y="0.0" width="125" height="44"/>
+                                    <connections>
+                                        <action selector="currencyButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="FLC-mN-6FV"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>

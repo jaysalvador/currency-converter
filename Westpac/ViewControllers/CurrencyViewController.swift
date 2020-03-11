@@ -40,6 +40,12 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
     @IBOutlet
     private var textView: UITextField?
     
+    @IBOutlet
+    private var currencyLabel: UILabel?
+    
+    @IBOutlet
+    private var currencyImageView: UIImageView?
+    
     // MARK: - Init
     
     required init?(coder aDecoder: NSCoder) {
@@ -69,10 +75,32 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
         
         var items = [CurrencyItem]()
         
-        self.viewModel?.currencies?.forEach { currency in
-            
-            items.append(.currency(currency))
+        var currencies = self.viewModel?.currencies
+        
+        currencies?.removeAll { [weak self] (currency) in
+
+            return currency == self?.viewModel?.selectedCurrency
         }
+        
+        if let selectedCurrency = self.viewModel?.selectedCurrency,
+            !selectedCurrency.isAUD {
+            
+            currencies = [selectedCurrency.toAUD]
+        }
+        
+        currencies?
+            .sorted {
+                
+                ($0.currencyCode ?? "") < ($1.currencyCode ?? "")
+            }
+            .sorted {
+                
+                $0.hasPrice.intValue > $1.hasPrice.intValue
+            }
+            .forEach { currency in
+                
+                items.append(.currency(currency))
+            }
         
         return [(.section, items)]
     }
@@ -106,6 +134,8 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
         
         super.viewDidLoad()
         
+        self.updateCurrencyButton()
+        
         self.viewModel?.getCurrencies()
     }
     
@@ -130,6 +160,36 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForSection section: CurrencySection, item: CurrencyItem, indexPath: IndexPath) -> CGSize? {
         
         return CGSize(width: collectionView.frame.width, height: 72.0)
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func currencyButtonTouchUpInside(_ sender: UIButton) {
+        
+        let vc = CurrencySelectViewController(viewModel: self.viewModel) { [weak self] (selectedCurrency) in
+            
+            self?.viewModel?.selectedCurrency = selectedCurrency
+            
+            self?.updateCurrencyButton()
+            
+            self?.updateSectionsAndItems(forced: true)
+        }
+        
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    func updateCurrencyButton() {
+        
+        self.currencyLabel?.text = nil
+        
+        self.currencyImageView?.image = nil
+        
+        if let selectedCurrency = self.viewModel?.selectedCurrency {
+
+            self.currencyLabel?.text = selectedCurrency.currencyCode
+            
+            self.currencyImageView?.image = selectedCurrency.image
+        }
     }
 }
 

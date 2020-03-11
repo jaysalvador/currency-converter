@@ -17,6 +17,8 @@ protocol CurrencyViewModelProtocol {
     
     var currencies: [Currency]? { get }
     
+    var selectedCurrency: Currency { get set }
+    
     // MARK: - Callbacks
     
     var onUpdated: ViewModelCallback? { get set }
@@ -35,6 +37,8 @@ class CurrencyViewModel: CurrencyViewModelProtocol {
     private var currencyClient: CurrencyClientProtocol?
     
     // MARK: - Data
+    
+    var selectedCurrency: Currency = Currency.AUD
     
     private(set) var currencies: [Currency]?
     
@@ -67,7 +71,9 @@ class CurrencyViewModel: CurrencyViewModelProtocol {
 
             case .success(let result):
 
-                self.currencies = result.currencies?.sorted { ($0.currencyCode ?? "") < ($1.currencyCode ?? "") }
+                self.currencies = result.currencies
+                
+                self.currencies?.insert(Currency.AUD, at: 0)
                 
                 self.onUpdated?()
 
