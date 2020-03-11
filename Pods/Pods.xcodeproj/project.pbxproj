@@ -1,0 +1,1147 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06D2452965FE0C92954B43B01564F399 /* Pods-Westpac-WestpacUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04017CF4FE12C5A32B0AFF4A13F2BDFF /* Pods-Westpac-WestpacUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A89EEBE04996BF1AA2227E0D372F6B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0B28AF4E12913AC5EEBAF7499182DF0B /* AbstractDiffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92EF6ECB3B86B047735A48A9FFB8B51 /* AbstractDiffCalculator.swift */; };
+		10E9F9DB287CF7479BA4E0F0CC006175 /* Pods-Westpac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8121BEA2272B06B7DC8EF16F81F729 /* Pods-Westpac-dummy.m */; };
+		1ADD9D0AD5F0657B7809864B756BC155 /* SectionedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370554140D3D52C63263F59B51EEC69 /* SectionedValues.swift */; };
+		1FA97EAFB44B9746B4EAA89F92BD54B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		24B8E90686E3EBD450E07677B38D688E /* Pods-Currency-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F52B4079554ADAF910CB5E8D9A84A2 /* Pods-Currency-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3066EF06522C705DCF41CFC5762EC797 /* Pods-Westpac-WestpacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F6F4CB149CC002955BAF3AB21D1179 /* Pods-Westpac-WestpacUITests-dummy.m */; };
+		4452A4C261337D00D753E7E3A12B8506 /* Dwifft+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B091E0526B1DAE13F7D7092710E587 /* Dwifft+AppKit.swift */; };
+		450F51F31A2DBD95877D73757AAC5915 /* Pods-Currency-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A8DBE68729A8E39AA3E0A03837F1D /* Pods-Currency-dummy.m */; };
+		69E49A01811CF8FA1FE92981ABB9067F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7D98B888ACA1822CD885AE930EB9F1DA /* Dwifft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 944F8D741C5232523EE2C67EF5E7386F /* Dwifft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		894969C74BE3934962FF7FCBBC0BF161 /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E42E5D13EB1DB8D9C1B947A5A95DB3 /* Dwifft.swift */; };
+		8F958A757695F959363483AF5B109D64 /* Dwifft+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6ADB998F1D7F704CF16A687C090EF6 /* Dwifft+UIKit.swift */; };
+		9681EE4BFD01B8416CD63158A79FC57A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C6595DA596CCB27496C42A5180AEA7E4 /* Pods-Westpac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EB853F3AA8E41D40B753FB6C7E46577 /* Pods-Westpac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF3B83C81214CC3290255C922E55DDF1 /* Dwifft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 084DA662250BE168D94CB327E53EDBB8 /* Dwifft-dummy.m */; };
+		DF693C667681BB1D60EB52AF9FCDC7C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E933F096D8DE21ED3A940B6361BDC045 /* Pods-WestpacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C30767508E7D0E03C47D1536AA7C4E8 /* Pods-WestpacTests-dummy.m */; };
+		F460C706EBDA1103E9732CC234C9FD89 /* Pods-WestpacTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3CA7567B775E4D72E369554EB412C4 /* Pods-WestpacTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		191A16B68DB8D91A72FAE7197D13C4CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4255A53C9FC46E2A6605D689307219F6;
+			remoteInfo = Dwifft;
+		};
+		50031B128D0D3216070FD14A60BD6E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4255A53C9FC46E2A6605D689307219F6;
+			remoteInfo = Dwifft;
+		};
+		F8187A51CFA98F43FF975A897A1B6855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D7EC673C734421F0263B71B85CE3EE3;
+			remoteInfo = "Pods-Westpac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013727F58970BC12E8DF71F58F2F222B /* Pods-Westpac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Westpac.debug.xcconfig"; sourceTree = "<group>"; };
+		01F794B77B959686F7775ABEB536386B /* Pods-Westpac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Westpac-acknowledgements.plist"; sourceTree = "<group>"; };
+		04017CF4FE12C5A32B0AFF4A13F2BDFF /* Pods-Westpac-WestpacUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Westpac-WestpacUITests-umbrella.h"; sourceTree = "<group>"; };
+		066E72C65A90C24102CEB064173C2378 /* Pods-Westpac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Westpac.release.xcconfig"; sourceTree = "<group>"; };
+		084DA662250BE168D94CB327E53EDBB8 /* Dwifft-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dwifft-dummy.m"; sourceTree = "<group>"; };
+		0A84C6B387C00C51B271D0FAAD91BB9F /* Pods-Westpac-WestpacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Westpac-WestpacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F2A67069C78546524D9E11F37A45094 /* Pods_Westpac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Westpac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13615163936A8936E11C785F4B51F33F /* Pods-Westpac-WestpacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Westpac-WestpacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		18E42E5D13EB1DB8D9C1B947A5A95DB3 /* Dwifft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dwifft.swift; path = Dwifft/Dwifft.swift; sourceTree = "<group>"; };
+		1D8121BEA2272B06B7DC8EF16F81F729 /* Pods-Westpac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Westpac-dummy.m"; sourceTree = "<group>"; };
+		251CA09680547D1BDE1D161CD4A440C1 /* Pods-WestpacTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WestpacTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		265287F58C49AF97531FBEFF73017B62 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
+		27EB130C15CB79A924EDD0821F461930 /* Pods_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F52B4079554ADAF910CB5E8D9A84A2 /* Pods-Currency-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Currency-umbrella.h"; sourceTree = "<group>"; };
+		2A6ADB998F1D7F704CF16A687C090EF6 /* Dwifft+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dwifft+UIKit.swift"; path = "Dwifft/Dwifft+UIKit.swift"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		34B32FA21C4DBB4EFE6EA1015C9CCACE /* Pods-Westpac-WestpacUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Westpac-WestpacUITests-frameworks.sh"; sourceTree = "<group>"; };
+		36A3D2907A50C25220B3A062A9BF461B /* Dwifft-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dwifft-prefix.pch"; sourceTree = "<group>"; };
+		36F6F4CB149CC002955BAF3AB21D1179 /* Pods-Westpac-WestpacUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Westpac-WestpacUITests-dummy.m"; sourceTree = "<group>"; };
+		3C30767508E7D0E03C47D1536AA7C4E8 /* Pods-WestpacTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WestpacTests-dummy.m"; sourceTree = "<group>"; };
+		3E3CA7567B775E4D72E369554EB412C4 /* Pods-WestpacTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WestpacTests-umbrella.h"; sourceTree = "<group>"; };
+		3FC75E1367C3348D63FD6E2197D6D39C /* Pods-Westpac-WestpacUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Westpac-WestpacUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4390144DA3646437FE29B2D28EF9F34F /* Pods-Currency-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Currency-Info.plist"; sourceTree = "<group>"; };
+		4CEA08EF0415DFCEBAF57B6C0855D9E7 /* Dwifft.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dwifft.xcconfig; sourceTree = "<group>"; };
+		4EB853F3AA8E41D40B753FB6C7E46577 /* Pods-Westpac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Westpac-umbrella.h"; sourceTree = "<group>"; };
+		5831D0EE352025131286CAE1F3F8DD14 /* Pods-Currency.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Currency.modulemap"; sourceTree = "<group>"; };
+		6024A68448F871970A099C0EBBC65ACB /* Pods-Currency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Currency.debug.xcconfig"; sourceTree = "<group>"; };
+		625D64BCB5688F67481E703A30F2633E /* Pods-Westpac-WestpacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Westpac-WestpacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6382B171A9E819CB3DF8829193793F8D /* Pods-Currency-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Currency-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6950E530E65AADA6C2DC7F6F86114611 /* Pods_Westpac_WestpacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Westpac_WestpacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCD567B5F8F56ED71B6D1B9C0665EB4 /* Pods-WestpacTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WestpacTests-Info.plist"; sourceTree = "<group>"; };
+		73618B643D95CAF55FC3A83CE68E0090 /* Dwifft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dwifft.modulemap; sourceTree = "<group>"; };
+		775C18BB3A6A3BE5DE134BB9A33E6827 /* Pods-Westpac-WestpacUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Westpac-WestpacUITests.modulemap"; sourceTree = "<group>"; };
+		7D7A8DBE68729A8E39AA3E0A03837F1D /* Pods-Currency-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Currency-dummy.m"; sourceTree = "<group>"; };
+		9037C5CFA62466532B7E5A9556858542 /* Pods-Westpac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Westpac-frameworks.sh"; sourceTree = "<group>"; };
+		944F8D741C5232523EE2C67EF5E7386F /* Dwifft-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dwifft-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1D54001B99024612121A6DEA7E8A7E2 /* Pods-Westpac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Westpac-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A6B091E0526B1DAE13F7D7092710E587 /* Dwifft+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dwifft+AppKit.swift"; path = "Dwifft/Dwifft+AppKit.swift"; sourceTree = "<group>"; };
+		A92EF6ECB3B86B047735A48A9FFB8B51 /* AbstractDiffCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AbstractDiffCalculator.swift; path = Dwifft/AbstractDiffCalculator.swift; sourceTree = "<group>"; };
+		A96973BB819609F32F8EC9B196A415C0 /* Pods-WestpacTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WestpacTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B370554140D3D52C63263F59B51EEC69 /* SectionedValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedValues.swift; path = Dwifft/SectionedValues.swift; sourceTree = "<group>"; };
+		B8C766E20E47E2DE057B1E45DC5A4A78 /* Pods_WestpacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WestpacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70DC7D54D463810CBB3B9203F4E8B45 /* Pods-WestpacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WestpacTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8FC9A3C7C5431BA46D202C078819816 /* Pods-Westpac-WestpacUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Westpac-WestpacUITests-Info.plist"; sourceTree = "<group>"; };
+		D9636C054688C8351CD86115B00770DF /* Dwifft-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Dwifft-Info.plist"; sourceTree = "<group>"; };
+		DE8AF660C1F63C6789727A780AEB7957 /* Pods-Westpac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Westpac-Info.plist"; sourceTree = "<group>"; };
+		DF9D0549E9A7A08F585D8E67701ED802 /* Pods-Westpac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Westpac.modulemap"; sourceTree = "<group>"; };
+		E0C0825001AA5ED5CDFBD1B24635543D /* Pods-Currency-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Currency-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5E1EE5EAFF6CE5F779619C24F7676B3 /* Pods-WestpacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WestpacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBC0538E0CDA4D160A42DCC6601B190A /* Pods-WestpacTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WestpacTests.modulemap"; sourceTree = "<group>"; };
+		FF024DCEACF139617EC596C45282C2F1 /* Dwifft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dwifft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59A5BECBA246EBD21F0FDF141F53A938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9681EE4BFD01B8416CD63158A79FC57A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3BAA36CE2FAD86609430F3A72B1C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A89EEBE04996BF1AA2227E0D372F6B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753542014706461D0BDD50412418A272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF693C667681BB1D60EB52AF9FCDC7C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB52187F206C85530ED825C21027E321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA97EAFB44B9746B4EAA89F92BD54B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFF38456BEA24070873C7A757E8E10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E49A01811CF8FA1FE92981ABB9067F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		068B0070579F8FBE91B7F4A70B9BC9FF /* Pods-Currency */ = {
+			isa = PBXGroup;
+			children = (
+				5831D0EE352025131286CAE1F3F8DD14 /* Pods-Currency.modulemap */,
+				6382B171A9E819CB3DF8829193793F8D /* Pods-Currency-acknowledgements.markdown */,
+				E0C0825001AA5ED5CDFBD1B24635543D /* Pods-Currency-acknowledgements.plist */,
+				7D7A8DBE68729A8E39AA3E0A03837F1D /* Pods-Currency-dummy.m */,
+				4390144DA3646437FE29B2D28EF9F34F /* Pods-Currency-Info.plist */,
+				29F52B4079554ADAF910CB5E8D9A84A2 /* Pods-Currency-umbrella.h */,
+				6024A68448F871970A099C0EBBC65ACB /* Pods-Currency.debug.xcconfig */,
+				265287F58C49AF97531FBEFF73017B62 /* Pods-Currency.release.xcconfig */,
+			);
+			name = "Pods-Currency";
+			path = "Target Support Files/Pods-Currency";
+			sourceTree = "<group>";
+		};
+		0A208BB7EF4CF5654F26F1A4F4DCF274 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C92EEAB2665E935D77571D23EA922394 /* Dwifft */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		265D76A97E76D537EF9049ADB826E011 /* Pods-Westpac */ = {
+			isa = PBXGroup;
+			children = (
+				DF9D0549E9A7A08F585D8E67701ED802 /* Pods-Westpac.modulemap */,
+				A1D54001B99024612121A6DEA7E8A7E2 /* Pods-Westpac-acknowledgements.markdown */,
+				01F794B77B959686F7775ABEB536386B /* Pods-Westpac-acknowledgements.plist */,
+				1D8121BEA2272B06B7DC8EF16F81F729 /* Pods-Westpac-dummy.m */,
+				9037C5CFA62466532B7E5A9556858542 /* Pods-Westpac-frameworks.sh */,
+				DE8AF660C1F63C6789727A780AEB7957 /* Pods-Westpac-Info.plist */,
+				4EB853F3AA8E41D40B753FB6C7E46577 /* Pods-Westpac-umbrella.h */,
+				013727F58970BC12E8DF71F58F2F222B /* Pods-Westpac.debug.xcconfig */,
+				066E72C65A90C24102CEB064173C2378 /* Pods-Westpac.release.xcconfig */,
+			);
+			name = "Pods-Westpac";
+			path = "Target Support Files/Pods-Westpac";
+			sourceTree = "<group>";
+		};
+		419A70EEF9F808B34CDB38AC06AD4475 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73618B643D95CAF55FC3A83CE68E0090 /* Dwifft.modulemap */,
+				4CEA08EF0415DFCEBAF57B6C0855D9E7 /* Dwifft.xcconfig */,
+				084DA662250BE168D94CB327E53EDBB8 /* Dwifft-dummy.m */,
+				D9636C054688C8351CD86115B00770DF /* Dwifft-Info.plist */,
+				36A3D2907A50C25220B3A062A9BF461B /* Dwifft-prefix.pch */,
+				944F8D741C5232523EE2C67EF5E7386F /* Dwifft-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Dwifft";
+			sourceTree = "<group>";
+		};
+		6C192AC3791EF97E5FB62BEE95AA3D25 /* Pods-Westpac-WestpacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				775C18BB3A6A3BE5DE134BB9A33E6827 /* Pods-Westpac-WestpacUITests.modulemap */,
+				3FC75E1367C3348D63FD6E2197D6D39C /* Pods-Westpac-WestpacUITests-acknowledgements.markdown */,
+				625D64BCB5688F67481E703A30F2633E /* Pods-Westpac-WestpacUITests-acknowledgements.plist */,
+				36F6F4CB149CC002955BAF3AB21D1179 /* Pods-Westpac-WestpacUITests-dummy.m */,
+				34B32FA21C4DBB4EFE6EA1015C9CCACE /* Pods-Westpac-WestpacUITests-frameworks.sh */,
+				C8FC9A3C7C5431BA46D202C078819816 /* Pods-Westpac-WestpacUITests-Info.plist */,
+				04017CF4FE12C5A32B0AFF4A13F2BDFF /* Pods-Westpac-WestpacUITests-umbrella.h */,
+				13615163936A8936E11C785F4B51F33F /* Pods-Westpac-WestpacUITests.debug.xcconfig */,
+				0A84C6B387C00C51B271D0FAAD91BB9F /* Pods-Westpac-WestpacUITests.release.xcconfig */,
+			);
+			name = "Pods-Westpac-WestpacUITests";
+			path = "Target Support Files/Pods-Westpac-WestpacUITests";
+			sourceTree = "<group>";
+		};
+		6F1924F5EC2B538D5C7FB1DC4EC6EF22 /* Pods-WestpacTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBC0538E0CDA4D160A42DCC6601B190A /* Pods-WestpacTests.modulemap */,
+				A96973BB819609F32F8EC9B196A415C0 /* Pods-WestpacTests-acknowledgements.markdown */,
+				251CA09680547D1BDE1D161CD4A440C1 /* Pods-WestpacTests-acknowledgements.plist */,
+				3C30767508E7D0E03C47D1536AA7C4E8 /* Pods-WestpacTests-dummy.m */,
+				6CCD567B5F8F56ED71B6D1B9C0665EB4 /* Pods-WestpacTests-Info.plist */,
+				3E3CA7567B775E4D72E369554EB412C4 /* Pods-WestpacTests-umbrella.h */,
+				E5E1EE5EAFF6CE5F779619C24F7676B3 /* Pods-WestpacTests.debug.xcconfig */,
+				C70DC7D54D463810CBB3B9203F4E8B45 /* Pods-WestpacTests.release.xcconfig */,
+			);
+			name = "Pods-WestpacTests";
+			path = "Target Support Files/Pods-WestpacTests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C92EEAB2665E935D77571D23EA922394 /* Dwifft */ = {
+			isa = PBXGroup;
+			children = (
+				A92EF6ECB3B86B047735A48A9FFB8B51 /* AbstractDiffCalculator.swift */,
+				18E42E5D13EB1DB8D9C1B947A5A95DB3 /* Dwifft.swift */,
+				A6B091E0526B1DAE13F7D7092710E587 /* Dwifft+AppKit.swift */,
+				2A6ADB998F1D7F704CF16A687C090EF6 /* Dwifft+UIKit.swift */,
+				B370554140D3D52C63263F59B51EEC69 /* SectionedValues.swift */,
+				419A70EEF9F808B34CDB38AC06AD4475 /* Support Files */,
+			);
+			path = Dwifft;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0A208BB7EF4CF5654F26F1A4F4DCF274 /* Pods */,
+				EEAC77DC60C7035EB740F7BB2ACDFDF3 /* Products */,
+				E6931E84501DE8757B807F6F8BF4475F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6931E84501DE8757B807F6F8BF4475F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				068B0070579F8FBE91B7F4A70B9BC9FF /* Pods-Currency */,
+				265D76A97E76D537EF9049ADB826E011 /* Pods-Westpac */,
+				6C192AC3791EF97E5FB62BEE95AA3D25 /* Pods-Westpac-WestpacUITests */,
+				6F1924F5EC2B538D5C7FB1DC4EC6EF22 /* Pods-WestpacTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EEAC77DC60C7035EB740F7BB2ACDFDF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF024DCEACF139617EC596C45282C2F1 /* Dwifft.framework */,
+				27EB130C15CB79A924EDD0821F461930 /* Pods_Currency.framework */,
+				0F2A67069C78546524D9E11F37A45094 /* Pods_Westpac.framework */,
+				6950E530E65AADA6C2DC7F6F86114611 /* Pods_Westpac_WestpacUITests.framework */,
+				B8C766E20E47E2DE057B1E45DC5A4A78 /* Pods_WestpacTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C2B43A26CB166020EB1CDFB04247A81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6595DA596CCB27496C42A5180AEA7E4 /* Pods-Westpac-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3926F3875EDC1C3FEC8695D5DE8FCC5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460C706EBDA1103E9732CC234C9FD89 /* Pods-WestpacTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F1943802E8736187005871BB4F6723 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D98B888ACA1822CD885AE930EB9F1DA /* Dwifft-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD150DD789424DA0A73BAF7A8E71D132 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06D2452965FE0C92954B43B01564F399 /* Pods-Westpac-WestpacUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCB48A0726C36FF7E32AE6F5DFEDFF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24B8E90686E3EBD450E07677B38D688E /* Pods-Currency-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4255A53C9FC46E2A6605D689307219F6 /* Dwifft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67375D2293447FAF29DF2E5022FF51F7 /* Build configuration list for PBXNativeTarget "Dwifft" */;
+			buildPhases = (
+				B7F1943802E8736187005871BB4F6723 /* Headers */,
+				40331C885CE19F8625C67402AE78230A /* Sources */,
+				CEFF38456BEA24070873C7A757E8E10D /* Frameworks */,
+				E95C69620542908F55D87BBD7BCF3392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dwifft;
+			productName = Dwifft;
+			productReference = FF024DCEACF139617EC596C45282C2F1 /* Dwifft.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6283A0ADBDDA62A566507CA14DF7D2D8 /* Pods-Westpac-WestpacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502B54392E3A65CDC9E2489251AF5A69 /* Build configuration list for PBXNativeTarget "Pods-Westpac-WestpacUITests" */;
+			buildPhases = (
+				DD150DD789424DA0A73BAF7A8E71D132 /* Headers */,
+				92715DD51CC2D97F55A66A3F4FB619AA /* Sources */,
+				753542014706461D0BDD50412418A272 /* Frameworks */,
+				4D6C973A5938578735E98388A6192CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3CBC81CF9AF7B28155020A9CEA4817 /* PBXTargetDependency */,
+			);
+			name = "Pods-Westpac-WestpacUITests";
+			productName = "Pods-Westpac-WestpacUITests";
+			productReference = 6950E530E65AADA6C2DC7F6F86114611 /* Pods_Westpac_WestpacUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D4A224CC22E789D163B8DCF104CC55B /* Pods-WestpacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7AAF16BF1957EFEC8D61E499F68B7B9 /* Build configuration list for PBXNativeTarget "Pods-WestpacTests" */;
+			buildPhases = (
+				3926F3875EDC1C3FEC8695D5DE8FCC5F /* Headers */,
+				2C830C111F6C5176096B7493976310D6 /* Sources */,
+				6E3BAA36CE2FAD86609430F3A72B1C00 /* Frameworks */,
+				20DD6B8FC59F83D183D7AB3AEF377095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9731BCCC5D97745DB208492175AAC7E0 /* PBXTargetDependency */,
+			);
+			name = "Pods-WestpacTests";
+			productName = "Pods-WestpacTests";
+			productReference = B8C766E20E47E2DE057B1E45DC5A4A78 /* Pods_WestpacTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D7EC673C734421F0263B71B85CE3EE3 /* Pods-Westpac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3124AB0860AE60CE90D0A66EF346F5A9 /* Build configuration list for PBXNativeTarget "Pods-Westpac" */;
+			buildPhases = (
+				0C2B43A26CB166020EB1CDFB04247A81 /* Headers */,
+				7542C167EDA70013BF921231D1CA1FD6 /* Sources */,
+				59A5BECBA246EBD21F0FDF141F53A938 /* Frameworks */,
+				45F3E658373DE5384C31E063D8154900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E0787A26EECC270B662465F7A4819EC /* PBXTargetDependency */,
+			);
+			name = "Pods-Westpac";
+			productName = "Pods-Westpac";
+			productReference = 0F2A67069C78546524D9E11F37A45094 /* Pods_Westpac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7F8F2DEB4D800DF73957E4FF7EE6F67 /* Pods-Currency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61851D4B9F09575EB8690AD9F6016671 /* Build configuration list for PBXNativeTarget "Pods-Currency" */;
+			buildPhases = (
+				FBCB48A0726C36FF7E32AE6F5DFEDFF8 /* Headers */,
+				FDCBD3E0C0FEFD8FA6C1EB96E61C85E5 /* Sources */,
+				AB52187F206C85530ED825C21027E321 /* Frameworks */,
+				62C3FC6F5D74BF5B1F08A0C0D8ACE150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Currency";
+			productName = "Pods-Currency";
+			productReference = 27EB130C15CB79A924EDD0821F461930 /* Pods_Currency.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EEAC77DC60C7035EB740F7BB2ACDFDF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4255A53C9FC46E2A6605D689307219F6 /* Dwifft */,
+				D7F8F2DEB4D800DF73957E4FF7EE6F67 /* Pods-Currency */,
+				9D7EC673C734421F0263B71B85CE3EE3 /* Pods-Westpac */,
+				6283A0ADBDDA62A566507CA14DF7D2D8 /* Pods-Westpac-WestpacUITests */,
+				8D4A224CC22E789D163B8DCF104CC55B /* Pods-WestpacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20DD6B8FC59F83D183D7AB3AEF377095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F3E658373DE5384C31E063D8154900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D6C973A5938578735E98388A6192CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C3FC6F5D74BF5B1F08A0C0D8ACE150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95C69620542908F55D87BBD7BCF3392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C830C111F6C5176096B7493976310D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E933F096D8DE21ED3A940B6361BDC045 /* Pods-WestpacTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40331C885CE19F8625C67402AE78230A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B28AF4E12913AC5EEBAF7499182DF0B /* AbstractDiffCalculator.swift in Sources */,
+				4452A4C261337D00D753E7E3A12B8506 /* Dwifft+AppKit.swift in Sources */,
+				8F958A757695F959363483AF5B109D64 /* Dwifft+UIKit.swift in Sources */,
+				DF3B83C81214CC3290255C922E55DDF1 /* Dwifft-dummy.m in Sources */,
+				894969C74BE3934962FF7FCBBC0BF161 /* Dwifft.swift in Sources */,
+				1ADD9D0AD5F0657B7809864B756BC155 /* SectionedValues.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7542C167EDA70013BF921231D1CA1FD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E9F9DB287CF7479BA4E0F0CC006175 /* Pods-Westpac-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92715DD51CC2D97F55A66A3F4FB619AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3066EF06522C705DCF41CFC5762EC797 /* Pods-Westpac-WestpacUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCBD3E0C0FEFD8FA6C1EB96E61C85E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450F51F31A2DBD95877D73757AAC5915 /* Pods-Currency-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E0787A26EECC270B662465F7A4819EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dwifft;
+			target = 4255A53C9FC46E2A6605D689307219F6 /* Dwifft */;
+			targetProxy = 50031B128D0D3216070FD14A60BD6E32 /* PBXContainerItemProxy */;
+		};
+		8B3CBC81CF9AF7B28155020A9CEA4817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dwifft;
+			target = 4255A53C9FC46E2A6605D689307219F6 /* Dwifft */;
+			targetProxy = 191A16B68DB8D91A72FAE7197D13C4CE /* PBXContainerItemProxy */;
+		};
+		9731BCCC5D97745DB208492175AAC7E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Westpac";
+			target = 9D7EC673C734421F0263B71B85CE3EE3 /* Pods-Westpac */;
+			targetProxy = F8187A51CFA98F43FF975A897A1B6855 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09753A9C7B5A274E4823C1E6580945CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13615163936A8936E11C785F4B51F33F /* Pods-Westpac-WestpacUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19398747AD060F3124F6F4943B514190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70DC7D54D463810CBB3B9203F4E8B45 /* Pods-WestpacTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WestpacTests/Pods-WestpacTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WestpacTests/Pods-WestpacTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32C2FB3BD9A2402E2347CE50F405010A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		65E8432CA1AC1817F746BE6B5C4F067E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		73BA33429D7653C69480E77B7E8C2E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066E72C65A90C24102CEB064173C2378 /* Pods-Westpac.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Westpac/Pods-Westpac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Westpac/Pods-Westpac.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		773A62B1C92A9EDA567DBCA9077251AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A84C6B387C00C51B271D0FAAD91BB9F /* Pods-Westpac-WestpacUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B24A4DC9E187E5C074453BC94DDBA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CEA08EF0415DFCEBAF57B6C0855D9E7 /* Dwifft.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dwifft/Dwifft-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dwifft/Dwifft-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Dwifft/Dwifft.modulemap";
+				PRODUCT_MODULE_NAME = Dwifft;
+				PRODUCT_NAME = Dwifft;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7D53878FEAADD9EB3E1FE37DF57A120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E1EE5EAFF6CE5F779619C24F7676B3 /* Pods-WestpacTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WestpacTests/Pods-WestpacTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WestpacTests/Pods-WestpacTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B87D8B687BC053E11876B73D69B60E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 013727F58970BC12E8DF71F58F2F222B /* Pods-Westpac.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Westpac/Pods-Westpac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Westpac/Pods-Westpac.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA030FB1E4F36E179543E3FDC0186B92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CEA08EF0415DFCEBAF57B6C0855D9E7 /* Dwifft.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dwifft/Dwifft-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dwifft/Dwifft-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Dwifft/Dwifft.modulemap";
+				PRODUCT_MODULE_NAME = Dwifft;
+				PRODUCT_NAME = Dwifft;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3FCE873EABF28CD2A97BA8F5A388BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 265287F58C49AF97531FBEFF73017B62 /* Pods-Currency.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Currency/Pods-Currency-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Currency/Pods-Currency.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EAE6CFDF4557F4D96AF4E5C74DAE4A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6024A68448F871970A099C0EBBC65ACB /* Pods-Currency.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Currency/Pods-Currency-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Currency/Pods-Currency.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3124AB0860AE60CE90D0A66EF346F5A9 /* Build configuration list for PBXNativeTarget "Pods-Westpac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87D8B687BC053E11876B73D69B60E86 /* Debug */,
+				73BA33429D7653C69480E77B7E8C2E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E8432CA1AC1817F746BE6B5C4F067E /* Debug */,
+				32C2FB3BD9A2402E2347CE50F405010A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502B54392E3A65CDC9E2489251AF5A69 /* Build configuration list for PBXNativeTarget "Pods-Westpac-WestpacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09753A9C7B5A274E4823C1E6580945CE /* Debug */,
+				773A62B1C92A9EDA567DBCA9077251AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61851D4B9F09575EB8690AD9F6016671 /* Build configuration list for PBXNativeTarget "Pods-Currency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAE6CFDF4557F4D96AF4E5C74DAE4A4E /* Debug */,
+				E3FCE873EABF28CD2A97BA8F5A388BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67375D2293447FAF29DF2E5022FF51F7 /* Build configuration list for PBXNativeTarget "Dwifft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B24A4DC9E187E5C074453BC94DDBA01 /* Debug */,
+				BA030FB1E4F36E179543E3FDC0186B92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7AAF16BF1957EFEC8D61E499F68B7B9 /* Build configuration list for PBXNativeTarget "Pods-WestpacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D53878FEAADD9EB3E1FE37DF57A120 /* Debug */,
+				19398747AD060F3124F6F4943B514190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

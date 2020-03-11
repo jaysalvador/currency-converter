@@ -14,18 +14,18 @@ public struct Currency: Codable {
     
     // MARK: - Attributes
     
-    var currencyCode: String?
-    var currencyName: String?
-    var country: String?
-    var buyTT: Double?
-    var sellTT: Double?
-    var buyTC: Double?
-    var buyNotes: Double?
-    var sellNotes: Double?
-    var spotRateDate: Date?
-    var effectiveDate: Date?
-    var updateDate: Date?
-    var lastUpdated: Date?
+    public var currencyCode: String?
+    public var currencyName: String?
+    public var country: String?
+    public var buyTT: Double?
+    public var sellTT: Double?
+    public var buyTC: Double?
+    public var buyNotes: Double?
+    public var sellNotes: Double?
+    public var spotRateDate: Date?
+    public var effectiveDate: Date?
+    public var updateDate: Date?
+    public var lastUpdated: Date?
 
     // MARK: - Coding Keys
     
@@ -63,6 +63,19 @@ public struct Currency: Codable {
         self.effectiveDate = container.dateIfPresent(forKey: .effectiveDate)
         self.updateDate = container.dateIfPresent(forKey: .updateDate)
         self.lastUpdated = container.dateIfPresent(forKey: .lastUpdated)
+    }
+}
+
+extension Currency {
+    
+    public var isAUD: Bool {
+        
+        return self.currencyCode?.uppercased() == "AUD"
+    }
+    
+    public var isGold: Bool {
+        
+        return self.currencyCode?.uppercased() == "XAU"
     }
 }
 

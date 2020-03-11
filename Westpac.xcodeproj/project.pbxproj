@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B5AAF09824183EBA0034645A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF09724183EBA0034645A /* AppDelegate.swift */; };
-		B5AAF09C24183EBA0034645A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF09B24183EBA0034645A /* ViewController.swift */; };
 		B5AAF0A124183EBB0034645A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF0A024183EBB0034645A /* Assets.xcassets */; };
 		B5AAF0A424183EBB0034645A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF0A224183EBB0034645A /* LaunchScreen.storyboard */; };
 		B5AAF0AF24183EBB0034645A /* WestpacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF0AE24183EBB0034645A /* WestpacTests.swift */; };
@@ -27,6 +26,10 @@
 		B5AAF13324186CB20034645A /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF12F24186CB20034645A /* CircularStd-Black.otf */; };
 		B5AAF13424186CB20034645A /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF13024186CB20034645A /* CircularStd-Bold.otf */; };
 		B5AAF13524186CB20034645A /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF13124186CB20034645A /* CircularStd-Medium.otf */; };
+		BC58A7ACE63662ADB2BCD3DD /* Pods_Westpac_WestpacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E509BE257C77F8222473D7D6 /* Pods_Westpac_WestpacUITests.framework */; };
+		C3127815E25107BE22D26AFE /* Pods_Westpac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B45005C31FDB58F00ABCD7 /* Pods_Westpac.framework */; };
+		D79F6CC4474D7068189D471A /* Pods_WestpacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2874AFEC54BEE2E668D117D9 /* Pods_WestpacTests.framework */; };
+		F4A8226E0306280C2124E785 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD516A92C848C06450E36323 /* Pods_Currency.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +62,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		024132E2AC29B3CF409E6581 /* Pods-WestpacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WestpacTests.debug.xcconfig"; path = "Target Support Files/Pods-WestpacTests/Pods-WestpacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2874AFEC54BEE2E668D117D9 /* Pods_WestpacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WestpacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C8CE30AD97941AA29D747A /* Pods-Westpac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westpac.debug.xcconfig"; path = "Target Support Files/Pods-Westpac/Pods-Westpac.debug.xcconfig"; sourceTree = "<group>"; };
+		5BE75B58ED2C5797751AE40F /* Pods-Westpac-WestpacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westpac-WestpacUITests.debug.xcconfig"; path = "Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D3831AB075AE76A1EE0CFAE /* Pods-Westpac-WestpacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westpac-WestpacUITests.release.xcconfig"; path = "Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		68B45005C31FDB58F00ABCD7 /* Pods_Westpac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Westpac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A223212F0A5E1CB3D7A5D9EB /* Pods-Currency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.debug.xcconfig"; path = "Target Support Files/Pods-Currency/Pods-Currency.debug.xcconfig"; sourceTree = "<group>"; };
+		A3A168D09E415700588052EB /* Pods-WestpacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WestpacTests.release.xcconfig"; path = "Target Support Files/Pods-WestpacTests/Pods-WestpacTests.release.xcconfig"; sourceTree = "<group>"; };
+		A88ED1698BE4FA6F729708EF /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.release.xcconfig"; path = "Target Support Files/Pods-Currency/Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
+		AD516A92C848C06450E36323 /* Pods_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AAF09424183EBA0034645A /* Westpac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westpac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AAF09724183EBA0034645A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5AAF09B24183EBA0034645A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5AAF0A024183EBB0034645A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5AAF0A324183EBB0034645A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5AAF0A524183EBB0034645A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +97,8 @@
 		B5AAF12F24186CB20034645A /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
 		B5AAF13024186CB20034645A /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
 		B5AAF13124186CB20034645A /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		CF991A5B580BCEB71315D295 /* Pods-Westpac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westpac.release.xcconfig"; path = "Target Support Files/Pods-Westpac/Pods-Westpac.release.xcconfig"; sourceTree = "<group>"; };
+		E509BE257C77F8222473D7D6 /* Pods_Westpac_WestpacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Westpac_WestpacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5AAF1212418564A0034645A /* libCurrency.a in Frameworks */,
+				C3127815E25107BE22D26AFE /* Pods_Westpac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79F6CC4474D7068189D471A /* Pods_WestpacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC58A7ACE63662ADB2BCD3DD /* Pods_Westpac_WestpacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +131,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A8226E0306280C2124E785 /* Pods_Currency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24B3CF0D1DE8DB2428BD7448 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55C8CE30AD97941AA29D747A /* Pods-Westpac.debug.xcconfig */,
+				CF991A5B580BCEB71315D295 /* Pods-Westpac.release.xcconfig */,
+				5BE75B58ED2C5797751AE40F /* Pods-Westpac-WestpacUITests.debug.xcconfig */,
+				5D3831AB075AE76A1EE0CFAE /* Pods-Westpac-WestpacUITests.release.xcconfig */,
+				024132E2AC29B3CF409E6581 /* Pods-WestpacTests.debug.xcconfig */,
+				A3A168D09E415700588052EB /* Pods-WestpacTests.release.xcconfig */,
+				A223212F0A5E1CB3D7A5D9EB /* Pods-Currency.debug.xcconfig */,
+				A88ED1698BE4FA6F729708EF /* Pods-Currency.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3FA41E7094F08FFC1F1DE40A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68B45005C31FDB58F00ABCD7 /* Pods_Westpac.framework */,
+				E509BE257C77F8222473D7D6 /* Pods_Westpac_WestpacUITests.framework */,
+				2874AFEC54BEE2E668D117D9 /* Pods_WestpacTests.framework */,
+				AD516A92C848C06450E36323 /* Pods_Currency.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5AAF08B24183EBA0034645A = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +172,8 @@
 				B5AAF0AD24183EBB0034645A /* WestpacTests */,
 				B5AAF0B824183EBB0034645A /* WestpacUITests */,
 				B5AAF09524183EBA0034645A /* Products */,
+				24B3CF0D1DE8DB2428BD7448 /* Pods */,
+				3FA41E7094F08FFC1F1DE40A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +193,6 @@
 			children = (
 				B5AAF0C7241841970034645A /* Resources */,
 				B5AAF09724183EBA0034645A /* AppDelegate.swift */,
-				B5AAF09B24183EBA0034645A /* ViewController.swift */,
 				B5AAF0A224183EBB0034645A /* LaunchScreen.storyboard */,
 				B5AAF0A524183EBB0034645A /* Info.plist */,
 			);
@@ -239,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5AAF0BE24183EBB0034645A /* Build configuration list for PBXNativeTarget "Westpac" */;
 			buildPhases = (
+				BC317785436EFF4B496C18C7 /* [CP] Check Pods Manifest.lock */,
 				B5AAF09024183EBA0034645A /* Sources */,
 				B5AAF09124183EBA0034645A /* Frameworks */,
 				B5AAF09224183EBA0034645A /* Resources */,
+				8F58426E4A6C340AC3D15C4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +303,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5AAF0C124183EBB0034645A /* Build configuration list for PBXNativeTarget "WestpacTests" */;
 			buildPhases = (
+				662703D8259BE36CE51BA733 /* [CP] Check Pods Manifest.lock */,
 				B5AAF0A624183EBB0034645A /* Sources */,
 				B5AAF0A724183EBB0034645A /* Frameworks */,
 				B5AAF0A824183EBB0034645A /* Resources */,
@@ -274,9 +322,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5AAF0C424183EBB0034645A /* Build configuration list for PBXNativeTarget "WestpacUITests" */;
 			buildPhases = (
+				BD6FA84671076226D499F926 /* [CP] Check Pods Manifest.lock */,
 				B5AAF0B124183EBB0034645A /* Sources */,
 				B5AAF0B224183EBB0034645A /* Frameworks */,
 				B5AAF0B324183EBB0034645A /* Resources */,
+				253D51E0079331928322B1EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,6 +342,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5AAF114241855C40034645A /* Build configuration list for PBXNativeTarget "Currency" */;
 			buildPhases = (
+				1C6D78DD05ADE1CFDAB88CE3 /* [CP] Check Pods Manifest.lock */,
 				B5AAF10C241855C40034645A /* Sources */,
 				B5AAF10D241855C40034645A /* Frameworks */,
 				B5AAF10E241855C40034645A /* CopyFiles */,
@@ -382,12 +433,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C6D78DD05ADE1CFDAB88CE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Currency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		253D51E0079331928322B1EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Westpac-WestpacUITests/Pods-Westpac-WestpacUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		662703D8259BE36CE51BA733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WestpacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F58426E4A6C340AC3D15C4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Westpac/Pods-Westpac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Westpac/Pods-Westpac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Westpac/Pods-Westpac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC317785436EFF4B496C18C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Westpac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6FA84671076226D499F926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Westpac-WestpacUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5AAF09024183EBA0034645A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5AAF09C24183EBA0034645A /* ViewController.swift in Sources */,
 				B5AAF09824183EBA0034645A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +742,7 @@
 		};
 		B5AAF0BF24183EBB0034645A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C8CE30AD97941AA29D747A /* Pods-Westpac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +760,7 @@
 		};
 		B5AAF0C024183EBB0034645A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF991A5B580BCEB71315D295 /* Pods-Westpac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +778,7 @@
 		};
 		B5AAF0C224183EBB0034645A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 024132E2AC29B3CF409E6581 /* Pods-WestpacTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -622,6 +800,7 @@
 		};
 		B5AAF0C324183EBB0034645A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A168D09E415700588052EB /* Pods-WestpacTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,6 +822,7 @@
 		};
 		B5AAF0C524183EBB0034645A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE75B58ED2C5797751AE40F /* Pods-Westpac-WestpacUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -662,6 +842,7 @@
 		};
 		B5AAF0C624183EBB0034645A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3831AB075AE76A1EE0CFAE /* Pods-Westpac-WestpacUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -681,6 +862,7 @@
 		};
 		B5AAF115241855C40034645A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A223212F0A5E1CB3D7A5D9EB /* Pods-Currency.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -693,6 +875,7 @@
 		};
 		B5AAF116241855C40034645A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88ED1698BE4FA6F729708EF /* Pods-Currency.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";

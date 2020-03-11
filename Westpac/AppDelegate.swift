@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        self.window?.rootViewController = ViewController()
+        self.window?.rootViewController = CurrencyViewController()
         
         self.window?.makeKeyAndVisible()
         

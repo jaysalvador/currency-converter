@@ -1,0 +1,6 @@
+framework module Pods_WestpacTests {
+  umbrella header "Pods-WestpacTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
