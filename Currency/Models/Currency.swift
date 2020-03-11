@@ -64,18 +64,81 @@ public struct Currency: Codable {
         self.updateDate = container.dateIfPresent(forKey: .updateDate)
         self.lastUpdated = container.dateIfPresent(forKey: .lastUpdated)
     }
+    
+    /// Initialise a custom `Currency` struct
+    public init (currencyCode: String?, currencyName: String?, country: String?, buyTT: Double?, sellTT: Double?, buyTC: Double?, buyNotes: Double?, sellNotes: Double?, spotRateDate: Date?, effectiveDate: Date?, updateDate: Date?, lastUpdated: Date?) {
+        
+        self.currencyCode = currencyCode
+        self.currencyName = currencyName
+        self.country = country
+        self.buyTT = buyTT
+        self.sellTT = sellTT
+        self.buyTC = buyTC
+        self.buyNotes = buyNotes
+        self.sellNotes = sellNotes
+        self.spotRateDate = spotRateDate
+        self.effectiveDate = effectiveDate
+        self.updateDate = updateDate
+        self.lastUpdated = lastUpdated
+
+    }
 }
 
 extension Currency {
     
+    /// a static constant for AUD with empty rate values
+    public static let AUD: Currency = {
+        
+        let AUD = Currency(
+            currencyCode: "AUD",
+            currencyName: "Dollars",
+            country: "Australia",
+            buyTT: nil,
+            sellTT: nil,
+            buyTC: nil,
+            buyNotes: nil,
+            sellNotes: nil,
+            spotRateDate: nil,
+            effectiveDate: nil,
+            updateDate: nil,
+            lastUpdated: nil
+        )
+        
+        return AUD
+    }()
+    
+    /// checks if the `Currency` is AUD
     public var isAUD: Bool {
         
         return self.currencyCode?.uppercased() == "AUD"
     }
     
+    /// checks if the `Currency` is Gold
     public var isGold: Bool {
         
         return self.currencyCode?.uppercased() == "XAU"
+    }
+    
+    /// converts a `Currency` struct to AUD
+    public var toAUD: Currency {
+        
+        var AUD = Currency.AUD
+        
+        if let buyTT = self.buyTT, buyTT > 0 {
+            
+            AUD.sellTT = 1 / buyTT
+        }
+        if let sellTT = self.sellTT, sellTT > 0 {
+            
+            AUD.buyTT = 1 / sellTT
+        }
+        
+        AUD.spotRateDate = self.spotRateDate
+        AUD.effectiveDate = self.effectiveDate
+        AUD.updateDate = self.updateDate
+        AUD.lastUpdated = self.lastUpdated
+        
+        return AUD
     }
 }
 

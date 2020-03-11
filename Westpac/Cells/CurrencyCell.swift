@@ -19,18 +19,23 @@ class CurrencyCell: UICollectionViewCell {
     
     @IBOutlet
     private var currencyImageView: UIImageView?
-
+    
+    /// Prepares the cell based on price and currency selected
+    /// - Parameter price: monetary amount
+    /// - Parameter currency: `Currency` object
     func prepare(price: Double, currency: Currency?) -> UICollectionViewCell {
-        
-        let convertedAmount: Double = price * (currency?.sellTT ?? 0.0)
-                
+                        
         return self.prepare(
-            price: String(format: "%.2f", convertedAmount),
+            price: price.convertTo(currency: currency).toPriceString(currency: currency),
             currency: currency?.currencyCode,
             image: UIImage(named: "\(currency?.currencyCode ?? "")")
         )
     }
     
+    /// Generic setup for this cell
+    /// - Parameter price: sets the price label
+    /// - Parameter currency: sets the currency label
+    /// - Parameter image: sets the Image View
     func prepare(price: String?, currency: String?, image: UIImage?) -> UICollectionViewCell {
         
         self.priceLabel?.text = price

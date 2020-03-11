@@ -10,6 +10,24 @@ import Foundation
 
 extension String {
     
+    /// Converts the currency code string to country code
+    public var toCountryCode: String? {
+        
+        guard self != "", self.count >= 2 else {
+            
+            return nil
+        }
+        
+        if self.prefix(1) == "X" {
+
+            return String(self.suffix(2))
+        }
+        else {
+         
+            return String(self.prefix(2))
+        }
+    }
+    
     /// Returns the date value of the String based on the formats determined from the API
     public func toDate() -> Date? {
         
