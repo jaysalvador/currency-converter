@@ -23,6 +23,10 @@
 		B5AAF12824185BE60034645A /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF12724185BE60034645A /* HttpError.swift */; };
 		B5AAF12A24185D380034645A /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF12924185D380034645A /* URLSession.swift */; };
 		B5AAF12C241862270034645A /* CurrencyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF12B241862270034645A /* CurrencyClient.swift */; };
+		B5AAF13224186CB20034645A /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF12E24186CB20034645A /* CircularStd-Book.otf */; };
+		B5AAF13324186CB20034645A /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF12F24186CB20034645A /* CircularStd-Black.otf */; };
+		B5AAF13424186CB20034645A /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF13024186CB20034645A /* CircularStd-Bold.otf */; };
+		B5AAF13524186CB20034645A /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF13124186CB20034645A /* CircularStd-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		B5AAF12724185BE60034645A /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		B5AAF12924185D380034645A /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		B5AAF12B241862270034645A /* CurrencyClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyClient.swift; sourceTree = "<group>"; };
+		B5AAF12E24186CB20034645A /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		B5AAF12F24186CB20034645A /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		B5AAF13024186CB20034645A /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
+		B5AAF13124186CB20034645A /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				B5AAF0A024183EBB0034645A /* Assets.xcassets */,
+				B5AAF12D24186CB20034645A /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -210,6 +219,17 @@
 				B5AAF12724185BE60034645A /* HttpError.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		B5AAF12D24186CB20034645A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B5AAF12E24186CB20034645A /* CircularStd-Book.otf */,
+				B5AAF12F24186CB20034645A /* CircularStd-Black.otf */,
+				B5AAF13024186CB20034645A /* CircularStd-Bold.otf */,
+				B5AAF13124186CB20034645A /* CircularStd-Medium.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,8 +357,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AAF13424186CB20034645A /* CircularStd-Bold.otf in Resources */,
 				B5AAF0A424183EBB0034645A /* LaunchScreen.storyboard in Resources */,
+				B5AAF13224186CB20034645A /* CircularStd-Book.otf in Resources */,
+				B5AAF13324186CB20034645A /* CircularStd-Black.otf in Resources */,
 				B5AAF0A124183EBB0034645A /* Assets.xcassets in Resources */,
+				B5AAF13524186CB20034645A /* CircularStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
