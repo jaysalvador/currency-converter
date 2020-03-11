@@ -71,6 +71,18 @@ class CurrencySelectViewController: JCollectionViewController<CurrencySection, C
         self.collectionView?.register(cell: CurrencySelectCell.self)
     }
     
+    // MARK: - View Lifecycle
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(true)
+        
+        if let selectedCurrency = self.viewModel?.selectedCurrency {
+
+            self.scrollToItem(atSection: .section, item: .currency(selectedCurrency))
+        }
+    }
+    
     // MARK: - UICollectionViewDataSource & UICollectionViewDelegate
     
     /// Renders all the items

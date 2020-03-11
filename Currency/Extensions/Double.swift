@@ -14,11 +14,6 @@ extension Double {
     /// - Parameter currency: `Currency` struct
     public func toPriceString(currency: Currency?) -> String? {
 
-        let formatter = NumberFormatter()
-        formatter.usesGroupingSeparator = true
-        formatter.numberStyle = .currency
-        formatter.locale = Locale(identifier: "en_US")
-        
         let blank = "-"
         
         guard let currency = currency else {
@@ -26,39 +21,21 @@ extension Double {
             return nil
         }
         
-        guard let currencyCode = currency.currencyCode,
-            let countryCode = currency.currencyCode?.toCountryCode else {
-            
-            formatter.currencySymbol = ""
-            formatter.usesGroupingSeparator = false
-            formatter.numberStyle = .decimal
-            formatter.maximumFractionDigits = 4
-            
-            return formatter.string(from: NSNumber(value: self))
-        }
-        
         if currency.isGold {
             
-            formatter.currencySymbol = ""
-            
-            let formattedString = currency.hasPrice ? formatter.string(from: NSNumber(value: self)) ?? blank : blank
+            let formattedString = currency.hasPrice ? currency.formatter.string(from: NSNumber(value: self)) ?? blank : blank
             
             return "\(formattedString) oz"
         }
         else {
-
-            formatter.usesGroupingSeparator = true
-            formatter.numberStyle = .currency
-            formatter.locale = Locale(identifier: "en_\(countryCode)")
-            formatter.currencyCode = currencyCode
             
             if currency.hasPrice {
 
-                return formatter.string(from: NSNumber(value: self))
+                return currency.formatter.string(from: NSNumber(value: self))
             }
             else {
 
-                return (formatter.currencySymbol ?? "") + " " + blank
+                return currency.currencySymbol + " " + blank
             }
         }
     }

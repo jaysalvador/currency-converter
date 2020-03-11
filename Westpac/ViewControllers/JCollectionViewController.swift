@@ -223,4 +223,12 @@ class JCollectionViewController<Section: Equatable, Item: Equatable>: UIViewCont
         return nil
     }
     
+    func scrollToItem(atSection section: Section, item: Item, scrollPosition: UICollectionView.ScrollPosition = .top, animated: Bool = true) {
+        
+        if let indexPath = self.diffCalculator?.indexPath(forSection: section, value: item) {
+            
+            self.collectionView?.scrollToItem(at: indexPath, at: scrollPosition, animated: animated)
+        }
+    }
+    
 }

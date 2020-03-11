@@ -164,12 +164,54 @@ extension Currency {
             description += (description != "" ? " " : "") + currency
         }
         
+        description += " (\(self.currencySymbol))"
+        
         return description
     }
     
     public var image: UIImage? {
         
         return UIImage(named: "\(self.currencyCode ?? "")")
+    }
+    
+    public var formatter: NumberFormatter {
+        
+        let formatter = NumberFormatter()
+        formatter.usesGroupingSeparator = true
+        formatter.numberStyle = .currency
+        formatter.locale = Locale(identifier: "en_US")
+        
+        guard let currencyCode = self.currencyCode,
+            let countryCode = self.currencyCode?.toCountryCode else {
+            
+            formatter.currencySymbol = ""
+            formatter.usesGroupingSeparator = false
+            formatter.numberStyle = .decimal
+            formatter.maximumFractionDigits = 4
+            
+            return formatter
+        }
+        
+        if self.isGold {
+            
+            formatter.currencySymbol = ""
+            
+            return formatter
+        }
+        else {
+
+            formatter.usesGroupingSeparator = true
+            formatter.numberStyle = .currency
+            formatter.locale = Locale(identifier: "en_\(countryCode)")
+            formatter.currencyCode = currencyCode
+            
+            return formatter
+        }
+    }
+    
+    public var currencySymbol: String {
+        
+        return self.formatter.currencySymbol
     }
 }
 

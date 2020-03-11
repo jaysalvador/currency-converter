@@ -93,10 +93,6 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
                 
                 ($0.currencyCode ?? "") < ($1.currencyCode ?? "")
             }
-            .sorted {
-                
-                $0.hasPrice.intValue > $1.hasPrice.intValue
-            }
             .forEach { currency in
                 
                 items.append(.currency(currency))
