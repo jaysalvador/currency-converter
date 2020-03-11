@@ -26,6 +26,11 @@
 		B5AAF13324186CB20034645A /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF12F24186CB20034645A /* CircularStd-Black.otf */; };
 		B5AAF13424186CB20034645A /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF13024186CB20034645A /* CircularStd-Bold.otf */; };
 		B5AAF13524186CB20034645A /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF13124186CB20034645A /* CircularStd-Medium.otf */; };
+		B5DDFDBD24187ACD007AD04B /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DDFDBB24187ACD007AD04B /* CurrencyCell.xib */; };
+		B5DDFDBE24187ACD007AD04B /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDBC24187ACD007AD04B /* CurrencyCell.swift */; };
+		B5DDFDC424187AD8007AD04B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDC024187AD8007AD04B /* UIView.swift */; };
+		B5DDFDC724187AD8007AD04B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDC324187AD8007AD04B /* UIFont.swift */; };
+		B5DDFDC924187AEF007AD04B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDC824187AEF007AD04B /* Theme.swift */; };
 		BC58A7ACE63662ADB2BCD3DD /* Pods_Westpac_WestpacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E509BE257C77F8222473D7D6 /* Pods_Westpac_WestpacUITests.framework */; };
 		C3127815E25107BE22D26AFE /* Pods_Westpac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B45005C31FDB58F00ABCD7 /* Pods_Westpac.framework */; };
 		D79F6CC4474D7068189D471A /* Pods_WestpacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2874AFEC54BEE2E668D117D9 /* Pods_WestpacTests.framework */; };
@@ -97,6 +102,11 @@
 		B5AAF12F24186CB20034645A /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
 		B5AAF13024186CB20034645A /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
 		B5AAF13124186CB20034645A /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		B5DDFDBB24187ACD007AD04B /* CurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
+		B5DDFDBC24187ACD007AD04B /* CurrencyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		B5DDFDC024187AD8007AD04B /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B5DDFDC324187AD8007AD04B /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		B5DDFDC824187AEF007AD04B /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CF991A5B580BCEB71315D295 /* Pods-Westpac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Westpac.release.xcconfig"; path = "Target Support Files/Pods-Westpac/Pods-Westpac.release.xcconfig"; sourceTree = "<group>"; };
 		E509BE257C77F8222473D7D6 /* Pods_Westpac_WestpacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Westpac_WestpacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -191,6 +201,9 @@
 		B5AAF09624183EBA0034645A /* Westpac */ = {
 			isa = PBXGroup;
 			children = (
+				B5DDFDC824187AEF007AD04B /* Theme.swift */,
+				B5DDFDBA24187ACD007AD04B /* Cells */,
+				B5DDFDBF24187AD8007AD04B /* Extensions */,
 				B5AAF0C7241841970034645A /* Resources */,
 				B5AAF09724183EBA0034645A /* AppDelegate.swift */,
 				B5AAF0A224183EBB0034645A /* LaunchScreen.storyboard */,
@@ -275,6 +288,24 @@
 				B5AAF13124186CB20034645A /* CircularStd-Medium.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B5DDFDBA24187ACD007AD04B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B5DDFDBB24187ACD007AD04B /* CurrencyCell.xib */,
+				B5DDFDBC24187ACD007AD04B /* CurrencyCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B5DDFDBF24187AD8007AD04B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5DDFDC024187AD8007AD04B /* UIView.swift */,
+				B5DDFDC324187AD8007AD04B /* UIFont.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +445,7 @@
 				B5AAF13324186CB20034645A /* CircularStd-Black.otf in Resources */,
 				B5AAF0A124183EBB0034645A /* Assets.xcassets in Resources */,
 				B5AAF13524186CB20034645A /* CircularStd-Medium.otf in Resources */,
+				B5DDFDBD24187ACD007AD04B /* CurrencyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +595,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DDFDBE24187ACD007AD04B /* CurrencyCell.swift in Sources */,
+				B5DDFDC724187AD8007AD04B /* UIFont.swift in Sources */,
+				B5DDFDC924187AEF007AD04B /* Theme.swift in Sources */,
+				B5DDFDC424187AD8007AD04B /* UIView.swift in Sources */,
 				B5AAF09824183EBA0034645A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
