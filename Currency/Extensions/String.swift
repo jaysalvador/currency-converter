@@ -8,10 +8,10 @@
 
 import Foundation
 
-public extension String {
+extension String {
     
     /// Returns the date value of the String based on the formats determined from the API
-    func toDate() -> Date? {
+    public func toDate() -> Date? {
         
         if let yearMonthDayDate = DateFormatter.yearMonthDay.date(from: self) {
             

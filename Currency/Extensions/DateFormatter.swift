@@ -8,10 +8,10 @@
 
 import Foundation
 
-public extension DateFormatter {
+extension DateFormatter {
     
     /// returns a formatter for `yyyyMMdd`
-    static let yearMonthDay: DateFormatter = {
+    public static let yearMonthDay: DateFormatter = {
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = .current
@@ -21,7 +21,7 @@ public extension DateFormatter {
     }()
     
     /// returns a formatter for ISO8601 `yyyyMMdd'T'HHmmss,SSSZZZZZ`
-    static let iso8601WithComma: DateFormatter = {
+    public static let iso8601WithComma: DateFormatter = {
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = .current
@@ -31,7 +31,7 @@ public extension DateFormatter {
     }()
     
     /// returns an API date format `HH:mm a dd MMM yyyy`
-    static let lastUpdated: DateFormatter = {
+    public static let lastUpdated: DateFormatter = {
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = .current

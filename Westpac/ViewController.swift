@@ -7,14 +7,27 @@
 //
 
 import UIKit
+import Currency
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let client = CurrencyClient()
+        
+        client?.getCurrencies { (response) in
+            
+            switch response {
+            case .success(let result):
+                
+                print(result.currencies)
+            case .failure(let error):
+                
+                print(error)
+            }
+        }
     }
-
-
 }
 
