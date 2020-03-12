@@ -18,7 +18,24 @@ class CurrencyDetailsCell: UICollectionViewCell {
         
         self.detailsLabel?.text = currency?.details
         
+        self.applyTheme()
+        
         return self
+    }
+    
+    private func applyTheme() {
+        
+        let theme = AppDelegate.shared?.theme ?? .standard
+        
+        switch theme {
+        case .red:
+            
+            self.detailsLabel?.textColor = .red
+            
+        default:
+                
+            self.detailsLabel?.textColor = .darkGray
+        }
     }
     
     class func size(givenWidth width: CGFloat, currency: Currency?) -> CGSize {

@@ -44,7 +44,19 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
     private var currencyLabel: UILabel?
     
     @IBOutlet
+    private var iHaveLabel: UILabel?
+    
+    @IBOutlet
     private var currencyImageView: UIImageView?
+    
+    @IBOutlet
+    private var chevronImageView: UIImageView?
+    
+    @IBOutlet
+    private var borderView: UIView?
+    
+    @IBOutlet
+    private var currencyButtonView: UIView?
     
     // MARK: - Init
     
@@ -115,6 +127,45 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
         }
     }
     
+    private func applyTheme() {
+        
+        let theme = AppDelegate.shared?.theme ?? .standard
+        
+        switch theme {
+        case .red:
+            
+            self.currencyButtonView?.borderColor = .borderRed
+            
+            self.borderView?.backgroundColor = .borderRed
+            
+            self.currencyLabel?.textColor = .red
+            
+            self.chevronImageView?.tintColor = .red
+            
+            self.iHaveLabel?.textColor = .red
+            
+            self.textView?.textColor = .red
+            
+            self.textView?.tintColor = .red
+            
+        default:
+        
+            self.currencyButtonView?.borderColor = .borderGray
+            
+            self.borderView?.backgroundColor = .borderGray
+        
+            self.currencyLabel?.textColor = .darkGray
+        
+            self.chevronImageView?.tintColor = .darkGray
+            
+            self.iHaveLabel?.textColor = .darkGray
+            
+            self.textView?.textColor = .darkGray
+            
+            self.textView?.tintColor = .darkGray
+        }
+    }
+    
     /// Register cells
     override func setupCollectionView() {
         
@@ -129,6 +180,8 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        self.applyTheme()
         
         self.updateCurrencyButton()
         

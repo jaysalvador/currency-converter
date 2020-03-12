@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Theme {
+enum Theme: String {
     
     case standard
     case red

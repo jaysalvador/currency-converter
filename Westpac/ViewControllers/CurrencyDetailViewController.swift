@@ -25,6 +25,13 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
     @IBOutlet
     private var titleLabel: UILabel?
     
+    @IBOutlet
+    private var borderView: UIView?
+    
+    @IBOutlet
+    private var backButton: UIButton?
+    
+    
     // MARK: - View model
     
     private var viewModel: CurrencyDetailViewModelProtocol?
@@ -70,7 +77,6 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
             items.append(.details(destination))
         }
         
-        
         return [(.section, items)]
     }
     
@@ -85,11 +91,36 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
         self.collectionView?.register(cell: CurrencyDetailsCell.self)
     }
     
+    private func applyTheme() {
+        
+        let theme = AppDelegate.shared?.theme ?? .standard
+        
+        switch theme {
+        case .red:
+            
+            self.borderView?.backgroundColor = .borderRed
+            
+            self.backButton?.tintColor = .red
+            
+            self.titleLabel?.textColor = .red
+            
+        default:
+            
+            self.borderView?.backgroundColor = .borderGray
+                
+            self.backButton?.tintColor = .darkGray
+            
+            self.titleLabel?.textColor = .darkGray
+        }
+    }
+    
     // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        self.applyTheme()
         
         self.titleLabel?.text = "Exchange \(self.viewModel?.source?.currencyCode ?? "") to \(self.viewModel?.destination?.currencyCode ?? "")"
     }

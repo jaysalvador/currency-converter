@@ -17,9 +17,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyViewController" customModule="Westpac" customModuleProvider="target">
             <connections>
+                <outlet property="borderView" destination="3hd-OL-ZaM" id="qDT-yM-Ugi"/>
+                <outlet property="chevronImageView" destination="H7H-we-KyR" id="NDi-H1-Lmg"/>
                 <outlet property="collectionView" destination="PiQ-NY-U7W" id="kPr-zn-P2I"/>
+                <outlet property="currencyButtonView" destination="aZ9-bh-0JT" id="yWC-yI-pKt"/>
                 <outlet property="currencyImageView" destination="7Dk-99-VIT" id="Ya3-Mh-mrX"/>
                 <outlet property="currencyLabel" destination="QTp-JT-GHK" id="N8H-Oy-Wu2"/>
+                <outlet property="iHaveLabel" destination="Xio-c7-xMe" id="7ks-nl-yfB"/>
                 <outlet property="textView" destination="kXW-sY-RKt" id="dpT-M9-tBF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -20,6 +20,9 @@ class CurrencyCell: UICollectionViewCell {
     @IBOutlet
     private var currencyImageView: UIImageView?
     
+    @IBOutlet
+    private var borderView: UIView?
+    
     /// Prepares the cell based on price and currency selected
     /// - Parameter price: monetary amount
     /// - Parameter currency: `Currency` object
@@ -44,6 +47,31 @@ class CurrencyCell: UICollectionViewCell {
         
         self.currencyImageView?.image = image
         
+        self.applyTheme()
+        
         return self
+    }
+    
+    private func applyTheme() {
+        
+        let theme = AppDelegate.shared?.theme ?? .standard
+        
+        switch theme {
+        case .red:
+            
+            self.priceLabel?.textColor = .red
+            
+            self.currencyLabel?.textColor = .red
+            
+            self.borderView?.backgroundColor = .borderRed
+            
+        default:
+        
+            self.priceLabel?.textColor = .darkGray
+        
+            self.currencyLabel?.textColor = .darkGray
+            
+            self.borderView?.backgroundColor = .borderGray
+        }
     }
 }

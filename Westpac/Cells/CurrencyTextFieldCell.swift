@@ -46,12 +46,45 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
         
         self.onTextChanged = _onTextChanged
         
+        self.applyTheme()
+        
         return self
     }
     
     func update(value: Double?) {
         
         self.textField?.text = String(format: "%.2f", value ?? 0.0)
+    }
+    
+    private func applyTheme() {
+        
+        let theme = AppDelegate.shared?.theme ?? .standard
+        
+        switch theme {
+        case .red:
+        
+            self.containerView?.borderColor = .borderRed
+        
+            self.dividerView?.backgroundColor = .borderRed
+            
+            self.currencyLabel?.textColor = .red
+            
+            self.textField?.textColor = .red
+            
+            self.textField?.tintColor = .red
+            
+        default:
+        
+            self.containerView?.borderColor = .borderGray
+        
+            self.dividerView?.backgroundColor = .borderGray
+                
+            self.currencyLabel?.textColor = .darkGray
+            
+            self.textField?.textColor = .darkGray
+            
+            self.textField?.tintColor = .darkGray
+        }
     }
     
     // MARK: - Actions

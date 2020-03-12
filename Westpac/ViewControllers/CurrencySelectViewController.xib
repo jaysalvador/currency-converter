@@ -14,7 +14,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencySelectViewController" customModule="Westpac" customModuleProvider="target">
             <connections>
+                <outlet property="borderView" destination="LFI-O9-LuX" id="Jkf-9V-M15"/>
+                <outlet property="closeButton" destination="VXU-wa-fNb" id="Zrf-DJ-nbB"/>
                 <outlet property="collectionView" destination="bo0-pp-9Al" id="zF1-eW-WGn"/>
+                <outlet property="titleLabel" destination="JV2-m0-qVZ" id="eeb-Bj-atd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

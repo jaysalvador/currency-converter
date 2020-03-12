@@ -19,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return UIApplication.shared.delegate as? AppDelegate
     }
+    
+    var theme: Theme {
+        
+        let theme = Bundle.main.object(forInfoDictionaryKey: "Theme") as? String ?? "standard"
+        
+        return Theme(rawValue: theme) ?? .standard
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         

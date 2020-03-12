@@ -18,6 +18,40 @@
 		B59EDDD7241A2A4600D979B1 /* CurrencyDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDDD5241A2A4600D979B1 /* CurrencyDetailsCell.swift */; };
 		B59EDDD8241A2A4600D979B1 /* CurrencyDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59EDDD6241A2A4600D979B1 /* CurrencyDetailsCell.xib */; };
 		B59EDDDA241A2BEF00D979B1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDDD9241A2BEF00D979B1 /* String.swift */; };
+		B59EDDDE241A322000D979B1 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDBC24187ACD007AD04B /* CurrencyCell.swift */; };
+		B59EDDDF241A322000D979B1 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDD224187B3F007AD04B /* CurrencyViewModel.swift */; };
+		B59EDDE0241A322000D979B1 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDC324187AD8007AD04B /* UIFont.swift */; };
+		B59EDDE1241A322000D979B1 /* CurrencySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDDB2418968B007AD04B /* CurrencySelectViewController.swift */; };
+		B59EDDE2241A322000D979B1 /* CurrencyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDDC9241A0B5D00D979B1 /* CurrencyDetailViewController.swift */; };
+		B59EDDE3241A322000D979B1 /* CurrencyDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDDD5241A2A4600D979B1 /* CurrencyDetailsCell.swift */; };
+		B59EDDE4241A322000D979B1 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDCB24187B2F007AD04B /* UICollectionView.swift */; };
+		B59EDDE5241A322000D979B1 /* CurrencyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDDCD241A0CD000D979B1 /* CurrencyDetailViewModel.swift */; };
+		B59EDDE6241A322000D979B1 /* CurrencyTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDDC3241A007F00D979B1 /* CurrencyTextFieldCell.swift */; };
+		B59EDDE7241A322000D979B1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDC824187AEF007AD04B /* Theme.swift */; };
+		B59EDDE8241A322000D979B1 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDD024187B3F007AD04B /* CurrencyViewController.swift */; };
+		B59EDDE9241A322000D979B1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDC024187AD8007AD04B /* UIView.swift */; };
+		B59EDDEA241A322000D979B1 /* AbstractDiffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDCA24187B2F007AD04B /* AbstractDiffCalculator.swift */; };
+		B59EDDEB241A322000D979B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF09724183EBA0034645A /* AppDelegate.swift */; };
+		B59EDDEC241A322000D979B1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDDD9241A2BEF00D979B1 /* String.swift */; };
+		B59EDDED241A322000D979B1 /* CurrencySelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDE1241897E0007AD04B /* CurrencySelectCell.swift */; };
+		B59EDDEE241A322000D979B1 /* JCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DDFDCF24187B3F007AD04B /* JCollectionViewController.swift */; };
+		B59EDDF0241A322000D979B1 /* libCurrency.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5AAF110241855C40034645A /* libCurrency.a */; };
+		B59EDDF1241A322000D979B1 /* Pods_Westpac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B45005C31FDB58F00ABCD7 /* Pods_Westpac.framework */; };
+		B59EDDF3241A322000D979B1 /* CurrencyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59EDDCA241A0B5D00D979B1 /* CurrencyDetailViewController.xib */; };
+		B59EDDF4241A322000D979B1 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF13024186CB20034645A /* CircularStd-Bold.otf */; };
+		B59EDDF5241A322000D979B1 /* CurrencySelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DDFDDC2418968B007AD04B /* CurrencySelectViewController.xib */; };
+		B59EDDF6241A322000D979B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF0A224183EBB0034645A /* LaunchScreen.storyboard */; };
+		B59EDDF7241A322000D979B1 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF12E24186CB20034645A /* CircularStd-Book.otf */; };
+		B59EDDF8241A322000D979B1 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF12F24186CB20034645A /* CircularStd-Black.otf */; };
+		B59EDDF9241A322000D979B1 /* CurrencyDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59EDDD6241A2A4600D979B1 /* CurrencyDetailsCell.xib */; };
+		B59EDDFA241A322000D979B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF0A024183EBB0034645A /* Assets.xcassets */; };
+		B59EDDFB241A322000D979B1 /* CurrencyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DDFDD124187B3F007AD04B /* CurrencyViewController.xib */; };
+		B59EDDFC241A322000D979B1 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF13124186CB20034645A /* CircularStd-Medium.otf */; };
+		B59EDDFD241A322000D979B1 /* CurrencyTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59EDDC4241A007F00D979B1 /* CurrencyTextFieldCell.xib */; };
+		B59EDDFE241A322000D979B1 /* CurrencySelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DDFDE2241897E0007AD04B /* CurrencySelectCell.xib */; };
+		B59EDDFF241A322000D979B1 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DDFDBB24187ACD007AD04B /* CurrencyCell.xib */; };
+		B59EDE09241A3BEA00D979B1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDE08241A3BEA00D979B1 /* UIColor.swift */; };
+		B59EDE0A241A3C6900D979B1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDE08241A3BEA00D979B1 /* UIColor.swift */; };
 		B5AAF09824183EBA0034645A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AAF09724183EBA0034645A /* AppDelegate.swift */; };
 		B5AAF0A124183EBB0034645A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF0A024183EBB0034645A /* Assets.xcassets */; };
 		B5AAF0A424183EBB0034645A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5AAF0A224183EBB0034645A /* LaunchScreen.storyboard */; };
@@ -111,6 +145,9 @@
 		B59EDDD5241A2A4600D979B1 /* CurrencyDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsCell.swift; sourceTree = "<group>"; };
 		B59EDDD6241A2A4600D979B1 /* CurrencyDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyDetailsCell.xib; sourceTree = "<group>"; };
 		B59EDDD9241A2BEF00D979B1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B59EDE04241A322000D979B1 /* My FX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My FX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59EDE05241A322000D979B1 /* MyFX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyFX-Info.plist"; path = "/Users/jaysalvador/programming-assessment/MyFX-Info.plist"; sourceTree = "<absolute>"; };
+		B59EDE08241A3BEA00D979B1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B5AAF09424183EBA0034645A /* Westpac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westpac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AAF09724183EBA0034645A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5AAF0A024183EBB0034645A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +195,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B59EDDEF241A322000D979B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59EDDF0241A322000D979B1 /* libCurrency.a in Frameworks */,
+				B59EDDF1241A322000D979B1 /* Pods_Westpac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5AAF09124183EBA0034645A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +286,7 @@
 				B5AAF0AA24183EBB0034645A /* WestpacTests.xctest */,
 				B5AAF0B524183EBB0034645A /* WestpacUITests.xctest */,
 				B5AAF110241855C40034645A /* libCurrency.a */,
+				B59EDE04241A322000D979B1 /* My FX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,6 +302,7 @@
 				B5AAF09724183EBA0034645A /* AppDelegate.swift */,
 				B5AAF0A224183EBB0034645A /* LaunchScreen.storyboard */,
 				B5AAF0A524183EBB0034645A /* Info.plist */,
+				B59EDE05241A322000D979B1 /* MyFX-Info.plist */,
 			);
 			path = Westpac;
 			sourceTree = "<group>";
@@ -362,9 +410,10 @@
 			children = (
 				B5DDFDCA24187B2F007AD04B /* AbstractDiffCalculator.swift */,
 				B5DDFDCB24187B2F007AD04B /* UICollectionView.swift */,
+				B59EDDD9241A2BEF00D979B1 /* String.swift */,
+				B59EDE08241A3BEA00D979B1 /* UIColor.swift */,
 				B5DDFDC324187AD8007AD04B /* UIFont.swift */,
 				B5DDFDC024187AD8007AD04B /* UIView.swift */,
-				B59EDDD9241A2BEF00D979B1 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -388,6 +437,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B59EDDDB241A322000D979B1 /* My FX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B59EDE01241A322000D979B1 /* Build configuration list for PBXNativeTarget "My FX" */;
+			buildPhases = (
+				B59EDDDC241A322000D979B1 /* [CP] Check Pods Manifest.lock */,
+				B59EDDDD241A322000D979B1 /* Sources */,
+				B59EDDEF241A322000D979B1 /* Frameworks */,
+				B59EDDF2241A322000D979B1 /* Resources */,
+				B59EDE00241A322000D979B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My FX";
+			productName = Westpac;
+			productReference = B59EDE04241A322000D979B1 /* My FX.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B5AAF09324183EBA0034645A /* Westpac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5AAF0BE24183EBB0034645A /* Build configuration list for PBXNativeTarget "Westpac" */;
@@ -504,6 +572,7 @@
 			projectRoot = "";
 			targets = (
 				B5AAF09324183EBA0034645A /* Westpac */,
+				B59EDDDB241A322000D979B1 /* My FX */,
 				B5AAF0A924183EBB0034645A /* WestpacTests */,
 				B5AAF0B424183EBB0034645A /* WestpacUITests */,
 				B5AAF10F241855C40034645A /* Currency */,
@@ -512,6 +581,26 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B59EDDF2241A322000D979B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59EDDF3241A322000D979B1 /* CurrencyDetailViewController.xib in Resources */,
+				B59EDDF4241A322000D979B1 /* CircularStd-Bold.otf in Resources */,
+				B59EDDF5241A322000D979B1 /* CurrencySelectViewController.xib in Resources */,
+				B59EDDF6241A322000D979B1 /* LaunchScreen.storyboard in Resources */,
+				B59EDDF7241A322000D979B1 /* CircularStd-Book.otf in Resources */,
+				B59EDDF8241A322000D979B1 /* CircularStd-Black.otf in Resources */,
+				B59EDDF9241A322000D979B1 /* CurrencyDetailsCell.xib in Resources */,
+				B59EDDFA241A322000D979B1 /* Assets.xcassets in Resources */,
+				B59EDDFB241A322000D979B1 /* CurrencyViewController.xib in Resources */,
+				B59EDDFC241A322000D979B1 /* CircularStd-Medium.otf in Resources */,
+				B59EDDFD241A322000D979B1 /* CurrencyTextFieldCell.xib in Resources */,
+				B59EDDFE241A322000D979B1 /* CurrencySelectCell.xib in Resources */,
+				B59EDDFF241A322000D979B1 /* CurrencyCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5AAF09224183EBA0034645A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -627,6 +716,45 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Westpac/Pods-Westpac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B59EDDDC241A322000D979B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Westpac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59EDE00241A322000D979B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Westpac/Pods-Westpac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Westpac/Pods-Westpac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Westpac/Pods-Westpac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BC317785436EFF4B496C18C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -674,6 +802,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B59EDDDD241A322000D979B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59EDDDE241A322000D979B1 /* CurrencyCell.swift in Sources */,
+				B59EDDDF241A322000D979B1 /* CurrencyViewModel.swift in Sources */,
+				B59EDDE0241A322000D979B1 /* UIFont.swift in Sources */,
+				B59EDDE1241A322000D979B1 /* CurrencySelectViewController.swift in Sources */,
+				B59EDDE2241A322000D979B1 /* CurrencyDetailViewController.swift in Sources */,
+				B59EDDE3241A322000D979B1 /* CurrencyDetailsCell.swift in Sources */,
+				B59EDDE4241A322000D979B1 /* UICollectionView.swift in Sources */,
+				B59EDDE5241A322000D979B1 /* CurrencyDetailViewModel.swift in Sources */,
+				B59EDDE6241A322000D979B1 /* CurrencyTextFieldCell.swift in Sources */,
+				B59EDDE7241A322000D979B1 /* Theme.swift in Sources */,
+				B59EDDE8241A322000D979B1 /* CurrencyViewController.swift in Sources */,
+				B59EDDE9241A322000D979B1 /* UIView.swift in Sources */,
+				B59EDDEA241A322000D979B1 /* AbstractDiffCalculator.swift in Sources */,
+				B59EDE0A241A3C6900D979B1 /* UIColor.swift in Sources */,
+				B59EDDEB241A322000D979B1 /* AppDelegate.swift in Sources */,
+				B59EDDEC241A322000D979B1 /* String.swift in Sources */,
+				B59EDDED241A322000D979B1 /* CurrencySelectCell.swift in Sources */,
+				B59EDDEE241A322000D979B1 /* JCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5AAF09024183EBA0034645A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -691,6 +844,7 @@
 				B5DDFDD424187B3F007AD04B /* CurrencyViewController.swift in Sources */,
 				B5DDFDC424187AD8007AD04B /* UIView.swift in Sources */,
 				B5DDFDCC24187B2F007AD04B /* AbstractDiffCalculator.swift in Sources */,
+				B59EDE09241A3BEA00D979B1 /* UIColor.swift in Sources */,
 				B5AAF09824183EBA0034645A /* AppDelegate.swift in Sources */,
 				B59EDDDA241A2BEF00D979B1 /* String.swift in Sources */,
 				B5DDFDE3241897E0007AD04B /* CurrencySelectCell.swift in Sources */,
@@ -762,6 +916,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B59EDE02241A322000D979B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C8CE30AD97941AA29D747A /* Pods-Westpac.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconFX;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MyFX-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.WestpacFX;
+				PRODUCT_NAME = "My FX";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B59EDE03241A322000D979B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF991A5B580BCEB71315D295 /* Pods-Westpac.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconFX;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MyFX-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.WestpacFX;
+				PRODUCT_NAME = "My FX";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		B5AAF0BC24183EBB0034645A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -890,7 +1080,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.Westpac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -908,7 +1098,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.Westpac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1025,6 +1215,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B59EDE01241A322000D979B1 /* Build configuration list for PBXNativeTarget "My FX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59EDE02241A322000D979B1 /* Debug */,
+				B59EDE03241A322000D979B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5AAF08F24183EBA0034645A /* Build configuration list for PBXProject "Westpac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

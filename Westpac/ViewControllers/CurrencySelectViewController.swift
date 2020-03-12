@@ -13,6 +13,15 @@ typealias CurrencySelectedClosure = ((Currency) -> Void)
 
 class CurrencySelectViewController: JCollectionViewController<CurrencySection, CurrencyItem> {
     
+    @IBOutlet
+    private var borderView: UIView?
+    
+    @IBOutlet
+    private var titleLabel: UILabel?
+    
+    @IBOutlet
+    private var closeButton: UIButton?
+    
     // MARK: - View model
     
     private var viewModel: CurrencyViewModelProtocol?
@@ -71,7 +80,37 @@ class CurrencySelectViewController: JCollectionViewController<CurrencySection, C
         self.collectionView?.register(cell: CurrencySelectCell.self)
     }
     
+    private func applyTheme() {
+        
+        let theme = AppDelegate.shared?.theme ?? .standard
+        
+        switch theme {
+        case .red:
+            
+            self.borderView?.backgroundColor = .borderRed
+            
+            self.closeButton?.tintColor = .red
+            
+            self.titleLabel?.textColor = .red
+            
+        default:
+            
+            self.borderView?.backgroundColor = .borderGray
+                
+            self.closeButton?.tintColor = .darkGray
+            
+            self.titleLabel?.textColor = .darkGray
+        }
+    }
+    
     // MARK: - View Lifecycle
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        self.applyTheme()
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         
