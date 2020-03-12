@@ -27,6 +27,8 @@ class CurrencyCell: UICollectionViewCell {
     /// - Parameter price: monetary amount
     /// - Parameter currency: `Currency` object
     func prepare(price: Double, currency: Currency?) -> UICollectionViewCell {
+        
+        self.accessibilityIdentifier = currency?.currencyCode
                     
         return self.prepare(
             price: price.convertTo(currency: currency).toPriceString(currency: currency),

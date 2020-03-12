@@ -12,17 +12,42 @@
 		<key>My FX.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Westpac.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>WestpacTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>WestpacUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>B59EDDDB241A322000D979B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5AAF09324183EBA0034645A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5AAF0A924183EBB0034645A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5AAF0B424183EBB0034645A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

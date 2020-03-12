@@ -9,31 +9,83 @@
 import XCTest
 
 class WestpacUITests: XCTestCase {
+    
+    // MARK: - Attributes
+    
+    var app: XCUIApplication!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        
+        self.app = XCUIApplication()
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testCurrencyTextFields() {
+                
+        self.app.launch()
+        
+        let textField = self.app.textFields.element
+        
+        textField.tap()
+        app.keys["1"].tap()
+        app.keys["0"].tap()
+        app.keys["0"].tap()
+        app.keys["0"].tap()
+        app.keys["."].tap()
+        app.keys["."].tap()
+        app.keys["2"].tap()
+        app.keys["5"].tap()
+        
+        XCTAssertEqual(textField.value as? String, "1000.25", "Invalid Number (1000.25)")
+        
+        let cell = self.app.collectionViews.cells["AED"]
+        
+        cell.tap()
+        
+        let audCell = self.app.collectionViews.cells["AUD"]
+        let audTextField = audCell.textFields.element
+        
+        audTextField.tap()
+        app.keys["Delete"].tap()
+        app.keys["Delete"].tap()
+        app.keys["Delete"].tap()
+        
+        XCTAssertEqual(audTextField.value as? String, "1000", "Invalid Number (1000)")
     }
-
-    func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testCurrencySwitch() {
+        
+        self.app.launch()
+        
+        let button = self.app.buttons.element
+        
+        button.tap()
+        
+        self.app.swipeUp()
+        self.app.swipeUp()
+        
+        let phpCell = self.app.collectionViews.cells["PHP"]
+        phpCell.tap()
+        
+        let label = self.app.staticTexts["currency"]
+        
+        XCTAssertEqual(label.label, "PHP", "Invalid Currency (PHP)")
+        
+        button.tap()
+        
+        self.app.swipeDown()
+        self.app.swipeDown()
+        self.app.swipeDown()
+        
+        let audCell = self.app.collectionViews.cells["BND"]
+        audCell.tap()
+        
+        XCTAssertEqual(label.label, "BND", "Invalid Currency (BND)")
     }
 
     func testLaunchPerformance() {
+
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
                 XCUIApplication().launch()

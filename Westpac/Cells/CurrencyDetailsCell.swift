@@ -16,6 +16,8 @@ class CurrencyDetailsCell: UICollectionViewCell {
     
     func prepare(currency: Currency?) -> UICollectionViewCell {
         
+        self.accessibilityIdentifier = currency?.currencyCode
+        
         self.detailsLabel?.text = currency?.details
         
         self.applyTheme()

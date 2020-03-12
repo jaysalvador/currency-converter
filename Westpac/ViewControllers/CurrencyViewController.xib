@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyViewController" customModule="Westpac" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyViewController" customModule="My_FX" customModuleProvider="target">
             <connections>
                 <outlet property="borderView" destination="3hd-OL-ZaM" id="qDT-yM-Ugi"/>
                 <outlet property="chevronImageView" destination="H7H-we-KyR" id="NDi-H1-Lmg"/>
@@ -62,6 +62,7 @@
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTp-JT-GHK">
                                     <rect key="frame" x="46" y="7" width="51" height="30.5"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="currency"/>
                                     <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="24"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>

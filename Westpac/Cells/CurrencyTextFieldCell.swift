@@ -36,6 +36,8 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
         onTextChanged _onTextChanged: TextInputChangedClosure?
     ) -> UICollectionViewCell {
         
+        self.accessibilityIdentifier = currency?.currencyCode
+        
         let priceString = String(format: "%.2f", value ?? 0.0)
         
         self.textField?.text = priceString

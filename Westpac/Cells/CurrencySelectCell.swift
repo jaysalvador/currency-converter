@@ -21,6 +21,8 @@ class CurrencySelectCell: UICollectionViewCell {
     private var borderView: UIView?
     
     func prepare(currency: Currency?, isSelected: Bool) -> UICollectionViewCell{
+        
+        self.accessibilityIdentifier = currency?.currencyCode
      
         return prepare(currency: currency?.description, image: currency?.image, isSelected: isSelected)
     }
