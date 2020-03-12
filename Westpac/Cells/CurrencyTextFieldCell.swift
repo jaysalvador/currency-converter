@@ -73,11 +73,15 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
             
             self.textField?.tintColor = .red
             
+            self.textField?.placeHolderColor = .borderRed
+            
         default:
         
             self.containerView?.borderColor = .borderGray
         
             self.dividerView?.backgroundColor = .borderGray
+            
+            self.textField?.placeHolderColor = .borderGray
                 
             self.currencyLabel?.textColor = .darkGray
             

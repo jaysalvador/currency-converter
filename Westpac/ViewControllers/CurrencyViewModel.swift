@@ -65,21 +65,21 @@ class CurrencyViewModel: CurrencyViewModelProtocol {
     /// Gets all the currencies from the API using the `Currency` library
     func getCurrencies() {
         
-        self.currencyClient?.getCurrencies { (response) in
+        self.currencyClient?.getCurrencies { [weak self] (response) in
                    
             switch response {
 
             case .success(let result):
 
-                self.currencies = result.currencies
+                self?.currencies = result.currencies
                 
-                self.currencies?.insert(Currency.AUD, at: 0)
+                self?.currencies?.insert(Currency.AUD, at: 0)
                 
-                self.onUpdated?()
+                self?.onUpdated?()
 
             case .failure:
 
-                self.onError?()
+                self?.onError?()
             }
         }
     }

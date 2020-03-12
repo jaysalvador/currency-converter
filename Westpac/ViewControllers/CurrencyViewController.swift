@@ -148,6 +148,8 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
             
             self.textView?.tintColor = .red
             
+            self.textView?.placeHolderColor = .borderRed
+            
         default:
         
             self.currencyButtonView?.borderColor = .borderGray
@@ -163,6 +165,8 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
             self.textView?.textColor = .darkGray
             
             self.textView?.tintColor = .darkGray
+            
+            self.textView?.placeHolderColor = .borderGray
         }
     }
     
