@@ -39,4 +39,14 @@ extension DateFormatter {
         
         return dateFormatter
     }()
+    
+    /// returns an API date format `dd/MM/yyyy HH:mm a`
+    public static let displayDate: DateFormatter = {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = .current
+        dateFormatter.dateFormat = "MMM dd, yyyy hh:mm a"
+        
+        return dateFormatter
+    }()
 }

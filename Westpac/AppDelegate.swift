@@ -25,8 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // MARK: - UI
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
+
+        let nav = UINavigationController(rootViewController: CurrencyViewController())
         
-        self.window?.rootViewController = CurrencyViewController()
+        nav.setNavigationBarHidden(true, animated: false)
+        
+        self.window?.rootViewController = nav
         
         self.window?.makeKeyAndVisible()
         

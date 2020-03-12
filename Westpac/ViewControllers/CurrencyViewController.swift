@@ -151,6 +151,27 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
         return nil
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAtSection section: CurrencySection, item: CurrencyItem) {
+
+        if case .currency(let currency) = item,
+            let source = self.viewModel?.selectedCurrency {
+            
+            let source = source.isAUD ? currency.toAUD : source
+            
+            let destination = currency.isAUD ? source.toAUD : currency
+            
+            let value = Double(self.textView?.text ?? "0")
+            
+            let vc = CurrencyDetailViewController(
+                value: value,
+                source: source,
+                destination: destination
+            )
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     // MARK: - UICollectionViewDelegateFlowLayout
     
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForSection section: CurrencySection, item: CurrencyItem, indexPath: IndexPath) -> CGSize? {
@@ -176,6 +197,8 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
     
     func updateCurrencyButton() {
         
+        self.textView?.contentVerticalAlignment = .center
+        
         self.currencyLabel?.text = nil
         
         self.currencyImageView?.image = nil
@@ -194,11 +217,6 @@ extension CurrencyViewController: UITextFieldDelegate {
     // MARK: - UITextFieldDelegate
     
     @IBAction
-    private func textFieldEditingDidBegin(_ textField: UITextField) {
-        
-    }
-    
-    @IBAction
     private func textFieldEditingChanged(_ textField: UITextField) {
 
         DispatchQueue.main.async { [weak self] in
@@ -207,15 +225,15 @@ extension CurrencyViewController: UITextFieldDelegate {
         }
     }
     
-    @IBAction
-    private func textFieldEditingDidEnd(_ textField: UITextField) {
-        
-    }
-    
     // MARK: - UITextFieldDelegate
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        return true
+        guard let text = textField.text else {
+            
+            return true
+        }
+        
+        return Double(text + string) != nil
     }
 }

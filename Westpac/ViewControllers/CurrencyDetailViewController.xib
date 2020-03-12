@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Bold.otf">
+            <string>CircularStd-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyDetailViewController" customModule="Westpac" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="rZY-bW-LpA" id="fs3-mJ-Txt"/>
+                <outlet property="titleLabel" destination="JNJ-Sj-FHm" id="ilO-jm-7ur"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Med-Lf-Kvd">
+                    <rect key="frame" x="0.0" y="44" width="414" height="76"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1h-Ex-1ix">
+                            <rect key="frame" x="0.0" y="75" width="414" height="1"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="0.1006260702" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="zYd-lx-8Gv"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Australian Dollars" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNJ-Sj-FHm">
+                            <rect key="frame" x="141" y="27.5" width="132" height="21"/>
+                            <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZc-he-MYZ">
+                            <rect key="frame" x="20" y="26" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="V8G-kz-FgC"/>
+                                <constraint firstAttribute="height" constant="24" id="Vnd-C9-bV0"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button" image="chevronLeft"/>
+                            <connections>
+                                <action selector="backButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="G18-DF-PLK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="R1h-Ex-1ix" secondAttribute="bottom" id="02O-Ld-Fzb"/>
+                        <constraint firstItem="eZc-he-MYZ" firstAttribute="centerY" secondItem="Med-Lf-Kvd" secondAttribute="centerY" id="5Kr-If-gAU"/>
+                        <constraint firstAttribute="trailing" secondItem="R1h-Ex-1ix" secondAttribute="trailing" id="SRd-pg-aoy"/>
+                        <constraint firstItem="JNJ-Sj-FHm" firstAttribute="centerY" secondItem="Med-Lf-Kvd" secondAttribute="centerY" id="ZxW-CH-2zf"/>
+                        <constraint firstItem="JNJ-Sj-FHm" firstAttribute="centerX" secondItem="Med-Lf-Kvd" secondAttribute="centerX" id="r4G-YG-tFk"/>
+                        <constraint firstItem="eZc-he-MYZ" firstAttribute="leading" secondItem="Med-Lf-Kvd" secondAttribute="leading" constant="20" id="u17-la-V0a"/>
+                        <constraint firstAttribute="height" constant="76" id="vur-EX-O1A"/>
+                        <constraint firstItem="R1h-Ex-1ix" firstAttribute="leading" secondItem="Med-Lf-Kvd" secondAttribute="leading" id="yGK-vf-t6S"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rZY-bW-LpA">
+                    <rect key="frame" x="0.0" y="120" width="414" height="776"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fTg-gH-bee">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jO1-h1-ue0"/>
+                        <outlet property="delegate" destination="-1" id="JcM-7e-uwd"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rZY-bW-LpA" secondAttribute="bottom" id="8fJ-qX-PSd"/>
+                <constraint firstItem="Med-Lf-Kvd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FSR-cw-xna"/>
+                <constraint firstItem="Med-Lf-Kvd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jfy-qj-stZ"/>
+                <constraint firstItem="rZY-bW-LpA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OEb-U9-P9N"/>
+                <constraint firstItem="rZY-bW-LpA" firstAttribute="top" secondItem="Med-Lf-Kvd" secondAttribute="bottom" id="W2v-CM-o3v"/>
+                <constraint firstItem="Med-Lf-Kvd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="acX-m6-cGr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rZY-bW-LpA" secondAttribute="trailing" id="pfF-ab-10J"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="135" y="146"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevronLeft" width="7" height="11"/>
+    </resources>
+</document>

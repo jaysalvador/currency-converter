@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 /// Codable for Currency Object
 
@@ -31,7 +30,7 @@ public struct Currency: Codable {
     // MARK: - Coding Keys
     
     // all fields are camel-cased
-    enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey, CaseIterable {
         
         case currencyCode
         case currencyName
@@ -81,152 +80,6 @@ public struct Currency: Codable {
         self.effectiveDate = effectiveDate
         self.updateDate = updateDate
         self.lastUpdated = lastUpdated
-
-    }
-}
-
-extension Currency {
-    
-    /// a static constant for AUD with empty rate values
-    public static let AUD: Currency = {
-        
-        let AUD = Currency(
-            currencyCode: "AUD",
-            currencyName: "Dollars",
-            country: "Australia",
-            buyTT: 1.00,
-            sellTT: 1.00,
-            buyTC: 1.00,
-            buyNotes: 1.00,
-            sellNotes: nil,
-            spotRateDate: nil,
-            effectiveDate: nil,
-            updateDate: nil,
-            lastUpdated: nil
-        )
-        
-        return AUD
-    }()
-    
-    /// checks if the `Currency` is AUD
-    public var isAUD: Bool {
-        
-        return self.currencyCode?.uppercased() == "AUD"
-    }
-    
-    /// checks if the `Currency` is Gold
-    public var isGold: Bool {
-        
-        return self.currencyCode?.uppercased() == "XAU"
-    }
-    
-    public var hasPrice: Bool {
-        
-        return self.sellTT != nil
-    }
-    
-    /// converts a `Currency` struct to AUD
-    public var toAUD: Currency {
-        
-        var AUD = Currency.AUD
-        
-        AUD.sellTT = nil
-        AUD.buyTT = nil
-        
-        if let buyTT = self.buyTT, buyTT > 0 {
-            
-            AUD.sellTT = 1 / buyTT
-        }
-        if let sellTT = self.sellTT, sellTT > 0 {
-            
-            AUD.buyTT = 1 / sellTT
-        }
-        
-        AUD.spotRateDate = self.spotRateDate
-        AUD.effectiveDate = self.effectiveDate
-        AUD.updateDate = self.updateDate
-        AUD.lastUpdated = self.lastUpdated
-        
-        return AUD
-    }
-    
-    public var description: String {
-        
-        var description: String = ""
-        
-        if let country = self.country {
-        
-            description = country
-        }
-        
-        if let currency = self.currencyName, !self.isGold {
-             
-            description += (description != "" ? " " : "") + currency
-        }
-        
-        description += " (\(self.currencySymbol))"
-        
-        return description
-    }
-    
-    public var image: UIImage? {
-        
-        return UIImage(named: "\(self.currencyCode ?? "")")
-    }
-    
-    public var formatter: NumberFormatter {
-        
-        let formatter = NumberFormatter()
-        formatter.usesGroupingSeparator = true
-        formatter.numberStyle = .currency
-        formatter.locale = Locale(identifier: "en_US")
-        
-        guard let currencyCode = self.currencyCode,
-            let countryCode = self.currencyCode?.toCountryCode else {
-            
-            formatter.currencySymbol = ""
-            formatter.usesGroupingSeparator = false
-            formatter.numberStyle = .decimal
-            formatter.maximumFractionDigits = 4
-            
-            return formatter
-        }
-        
-        if self.isGold {
-            
-            formatter.currencySymbol = ""
-            
-            return formatter
-        }
-        else {
-
-            formatter.usesGroupingSeparator = true
-            formatter.numberStyle = .currency
-            formatter.locale = Locale(identifier: "en_\(countryCode)")
-            formatter.currencyCode = currencyCode
-            
-            return formatter
-        }
-    }
-    
-    public var currencySymbol: String {
-        
-        return self.formatter.currencySymbol
-    }
-}
-
-extension Currency: Equatable {
-    
-    // add equatable to compare Currency objects
-    
-    public static func == (lhs: Currency, rhs: Currency) -> Bool {
-        
-        guard let lhsCurrencyCode = lhs.currencyCode, let rhsCurrencyCode = rhs.currencyCode else {
-            
-            return false
-        }
-        
-        return lhsCurrencyCode == rhsCurrencyCode
     }
 }
 

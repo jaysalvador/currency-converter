@@ -46,4 +46,14 @@ extension Double {
         
         return self * (currency?.sellTT ?? 0.0)
     }
+    
+    public func buy(currency: Currency?) -> Double {
+        
+        guard let sellTT = currency?.sellTT, sellTT != 0 else {
+            
+            return 0
+        }
+        
+        return self / sellTT
+    }
 }

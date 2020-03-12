@@ -23,15 +23,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2AE49C2F-D086-495B-AAD5-4D65959A120E"
+            uuid = "02AA0A88-796F-4FC1-A128-90DC4614DB0F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Westpac/ViewControllers/CurrencyViewController.swift"
+            filePath = "Westpac/ViewControllers/CurrencyDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "sectionsAndItems"
             landmarkType = "24">
          </BreakpointContent>
@@ -39,17 +39,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "91B8D422-20CA-4D8A-819F-712561472F6E"
+            uuid = "00D692AD-60E2-4D16-82D2-4EF1B523A19D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Westpac/ViewControllers/CurrencyViewController.swift"
+            filePath = "Westpac/ViewControllers/CurrencyDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "sectionsAndItems"
-            landmarkType = "24">
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "reloadCell(value:currency:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
