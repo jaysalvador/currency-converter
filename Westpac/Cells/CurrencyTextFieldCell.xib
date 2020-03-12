@@ -61,7 +61,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="textFieldEditingChanged:" destination="gTV-IL-0wX" eventType="editingChanged" id="wVs-Om-S5I"/>
-                                    <outlet property="delegate" destination="-1" id="NPf-NU-0ND"/>
+                                    <outlet property="delegate" destination="gTV-IL-0wX" id="jxO-Vu-jnz"/>
                                 </connections>
                             </textField>
                         </subviews>
