@@ -28,6 +28,9 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
     @IBOutlet
     private var textField: UITextField?
     
+    @IBOutlet
+    private var titleLabel: UILabel?
+    
     private var onTextChanged: TextInputChangedClosure?
     
     /// Prepares the cell based on currency and the amount to convert
@@ -35,6 +38,7 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
     /// - Parameter currency: `Currency` of the value
     /// - Parameter _onTextChanged: callback closure to handle textField change event
     func prepare(
+        label: String?,
         value: Double?,
         currency: Currency?,
         onTextChanged _onTextChanged: TextInputChangedClosure?
@@ -43,6 +47,8 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
         self.accessibilityIdentifier = currency?.currencyCode
         
         let priceString = String(format: "%.2f", value ?? 0.0)
+        
+        self.titleLabel?.text = label
         
         self.textField?.text = priceString
         
@@ -78,6 +84,8 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
             
             self.currencyLabel?.textColor = .red
             
+            self.titleLabel?.textColor = .red
+            
             self.textField?.textColor = .red
             
             self.textField?.tintColor = .red
@@ -94,10 +102,20 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
                 
             self.currencyLabel?.textColor = .darkGray
             
+            self.titleLabel?.textColor = .darkGray
+            
             self.textField?.textColor = .darkGray
             
             self.textField?.tintColor = .darkGray
         }
+    }
+    
+    /// Computes the size of the cell
+    /// - Parameter width: the cell's maximum width
+    /// - Parameter currency: `Currency` object
+    class func size(givenWidth width: CGFloat) -> CGSize {
+        
+        return CGSize(width: width, height: 100.0)
     }
     
     // MARK: - Actions

@@ -134,17 +134,40 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
         switch item {
         case .currency(let currency):
             
-            /// checks if the currency value of the cell is the source currency
-            let isSource = currency == self.viewModel?.source
-            
-            /// if it is the source currency, set the textfield value as is, else, convert the textfield value to the destination currency
-            let value = isSource == true ? self.viewModel?.value : self.viewModel?.value?.convertTo(currency: self.viewModel?.destination)
-            
-            let convertToCurrency = isSource == true ? self.viewModel?.destination : self.viewModel?.source
-            
             if let cell = self.collectionView?.dequeueReusable(cell: CurrencyTextFieldCell.self, for: indexPath) {
                 
+                /// checks if the currency value of the cell is the source currency
+                let isSource = currency == self.viewModel?.source
+                
+                let value: Double?
+                let label: String
+                let convertToCurrency: Currency?
+                
+                /// if it is the source currency
+                /// set the textfield value as is
+                /// sets the convertToCurrency to destination
+                /// else
+                /// convert the textfield value to the destination currency
+                /// sets the convertToCurrency to source
+                if isSource == true {
+                    
+                    value = self.viewModel?.value
+                    
+                    convertToCurrency = self.viewModel?.destination
+                    
+                    label = "Currency I have"
+                }
+                else {
+                    
+                    value = self.viewModel?.value?.convertTo(currency: self.viewModel?.destination)
+                    
+                    convertToCurrency = self.viewModel?.source
+                    
+                    label = "Currency I want"
+                }
+                
                 return cell.prepare(
+                    label: label,
                     value: value,
                     currency: currency,
                     onTextChanged: { [weak self] (value) in
@@ -171,7 +194,7 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
         switch item {
         case .currency:
             
-            return CGSize(width: collectionView.frame.width, height: 72.0)
+            return CurrencyTextFieldCell.size(givenWidth: collectionView.frame.width)
             
         case .details(let currency):
 
