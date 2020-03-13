@@ -127,6 +127,7 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
         }
     }
     
+    /// Change the cell's UI based on  the defined`Theme`
     private func applyTheme() {
         
         let theme = AppDelegate.shared?.theme ?? .standard
@@ -208,6 +209,7 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
         return nil
     }
     
+    /// handles currency selection to show in `CurrencyDetailViewController`
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAtSection section: CurrencySection, item: CurrencyItem) {
 
         if case .currency(let currency) = item,
@@ -238,6 +240,7 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
     
     // MARK: - Actions
     
+    /// Opens `CurrencySelectViewController` to switch currency source
     @IBAction func currencyButtonTouchUpInside(_ sender: UIButton) {
         
         let vc = CurrencySelectViewController(viewModel: self.viewModel) { [weak self] (selectedCurrency) in
@@ -252,6 +255,7 @@ class CurrencyViewController: JCollectionViewController<CurrencySection, Currenc
         self.present(vc, animated: true, completion: nil)
     }
     
+    /// Updates the source currency button
     func updateCurrencyButton() {
         
         self.textView?.contentVerticalAlignment = .center
@@ -273,6 +277,8 @@ extension CurrencyViewController: UITextFieldDelegate {
 
     // MARK: - UITextFieldDelegate
     
+    /// refresh the currency data from the API
+    /// - Parameter textField: textField object
     @IBAction
     private func textFieldEditingChanged(_ textField: UITextField) {
 
@@ -284,6 +290,10 @@ extension CurrencyViewController: UITextFieldDelegate {
     
     // MARK: - UITextFieldDelegate
     
+    /// Defined delegate function to only accept numbers
+    /// - Parameter textField: textField object
+    /// - Parameter range: range of the textfield string
+    /// - Parameter string: new character entered from the keyboard
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         guard let text = textField.text else {

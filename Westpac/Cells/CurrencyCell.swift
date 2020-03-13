@@ -54,6 +54,7 @@ class CurrencyCell: UICollectionViewCell {
         return self
     }
     
+    /// Change the cell's UI based on  the defined`Theme`
     private func applyTheme() {
         
         let theme = AppDelegate.shared?.theme ?? .standard

@@ -26,6 +26,10 @@ class CurrencyDetailViewModel: CurrencyDetailViewModelProtocol {
     
     private(set) var destination: Currency?
     
+    /// Creates a new ViewModel with the currency amount, it's source currency, and the destination currency to convert to
+    /// - Parameter value: currency amount
+    /// - Parameter source: the source currency
+    /// - Parameter destination: the destination currency to convert to
     init(value: Double?, source: Currency?, destination: Currency?) {
         
         self.value = value

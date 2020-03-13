@@ -10,6 +10,7 @@ import UIKit
 
 extension UITextField {
     
+    /// exposed attribute to override the text field placeholder colour
     @IBInspectable
     var placeHolderColor: UIColor? {
         

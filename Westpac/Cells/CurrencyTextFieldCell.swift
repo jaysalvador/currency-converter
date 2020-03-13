@@ -30,6 +30,10 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
     
     private var onTextChanged: TextInputChangedClosure?
     
+    /// Prepares the cell based on currency and the amount to convert
+    /// - Parameter value: The amount to convert in `Double`
+    /// - Parameter currency: `Currency` of the value
+    /// - Parameter _onTextChanged: callback closure to handle textField change event
     func prepare(
         value: Double?,
         currency: Currency?,
@@ -53,11 +57,14 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
         return self
     }
     
+    /// Update the textField value
+    /// - Parameter value: `Double` value from the conversion
     func update(value: Double?) {
         
         self.textField?.text = String(format: "%.2f", value ?? 0.0)
     }
     
+    /// Change the cell's UI based on  the defined`Theme`
     private func applyTheme() {
         
         let theme = AppDelegate.shared?.theme ?? .standard
@@ -95,6 +102,8 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
     
     // MARK: - Actions
     
+    /// returns the `String` value of the textField to the callback closure
+    /// - Parameter textField: textField object
     @IBAction
     private func textFieldEditingChanged(_ textField: UITextField) {
         
@@ -103,11 +112,10 @@ class CurrencyTextFieldCell: UICollectionViewCell, UITextFieldDelegate {
     
     // MARK: - UITextFieldDelegate
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        return true
-    }
-    
+    /// Defined delegate function to only accept numbers
+    /// - Parameter textField: textField object
+    /// - Parameter range: range of the textfield string
+    /// - Parameter string: new character entered from the keyboard
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         guard let text = textField.text else {

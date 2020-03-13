@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Used to theme the app
 enum Theme: String {
     
     case standard

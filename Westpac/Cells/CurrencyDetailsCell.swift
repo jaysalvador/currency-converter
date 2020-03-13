@@ -14,6 +14,8 @@ class CurrencyDetailsCell: UICollectionViewCell {
     @IBOutlet
     private var detailsLabel: UILabel?
     
+    /// Prepares the cell based on currency
+    /// - Parameter currency: `Currency` object
     func prepare(currency: Currency?) -> UICollectionViewCell {
         
         self.accessibilityIdentifier = currency?.currencyCode
@@ -25,6 +27,7 @@ class CurrencyDetailsCell: UICollectionViewCell {
         return self
     }
     
+    /// Change the cell's UI based on  the defined`Theme`
     private func applyTheme() {
         
         let theme = AppDelegate.shared?.theme ?? .standard
@@ -40,6 +43,9 @@ class CurrencyDetailsCell: UICollectionViewCell {
         }
     }
     
+    /// Computes the size of the cell based on the currency description
+    /// - Parameter width: the cell's maximum width
+    /// - Parameter currency: `Currency` object 
     class func size(givenWidth width: CGFloat, currency: Currency?) -> CGSize {
         
         guard let currency = currency else {

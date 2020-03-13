@@ -47,7 +47,9 @@ extension Double {
         return self * (currency?.sellTT ?? 0.0)
     }
     
-    public func buy(currency: Currency?) -> Double {
+    /// Currency conversion to revert back the amount
+    /// - Parameter currency: `Currency` used in conversion
+    public func convertBack(currency: Currency?) -> Double {
         
         guard let sellTT = currency?.sellTT, sellTT != 0 else {
             

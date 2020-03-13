@@ -10,11 +10,13 @@ import UIKit
 
 extension UIColor {
     
+    /// defined Red Border for theming
     class var borderRed: UIColor {
         
         return UIColor.red.withAlphaComponent(0.2)
     }
     
+    /// defined Gray Border for theming
     class var borderGray: UIColor {
         
         return UIColor.lightGray.withAlphaComponent(0.2)

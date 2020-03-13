@@ -102,6 +102,7 @@ extension Currency {
         return UIImage(named: "\(self.currencyCode ?? "")")
     }
     
+    /// `NumberFormatter` used to format numbers according to a particular currency
     public var formatter: NumberFormatter {
         
         let formatter = NumberFormatter()
@@ -137,11 +138,13 @@ extension Currency {
         }
     }
     
+    /// returns the currency symbol representation
     public var currencySymbol: String {
         
         return self.isGold ? "oz" : self.formatter.currencySymbol
     }
     
+    /// returns all the field values in `String`
     public var details: String {
         
         var details = ""

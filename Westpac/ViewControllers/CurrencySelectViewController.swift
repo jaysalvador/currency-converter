@@ -80,6 +80,7 @@ class CurrencySelectViewController: JCollectionViewController<CurrencySection, C
         self.collectionView?.register(cell: CurrencySelectCell.self)
     }
     
+    /// Change the cell's UI based on  the defined`Theme`
     private func applyTheme() {
         
         let theme = AppDelegate.shared?.theme ?? .standard

@@ -10,6 +10,7 @@ import Foundation
 
 extension Bool {
     
+    /// returns the `Int` representation of the `Bool` value
     public var intValue: Int {
         
         return self ? 1 : 0

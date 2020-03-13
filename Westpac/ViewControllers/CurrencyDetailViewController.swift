@@ -91,6 +91,7 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
         self.collectionView?.register(cell: CurrencyDetailsCell.self)
     }
     
+    /// Change the cell's UI based on  the defined`Theme`
     private func applyTheme() {
         
         let theme = AppDelegate.shared?.theme ?? .standard
@@ -133,8 +134,10 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
         switch item {
         case .currency(let currency):
             
+            /// checks if the currency value of the cell is the source currency
             let isSource = currency == self.viewModel?.source
             
+            /// if it is the source currency, set the textfield value as is, else, convert the textfield value to the destination currency
             let value = isSource == true ? self.viewModel?.value : self.viewModel?.value?.convertTo(currency: self.viewModel?.destination)
             
             let convertToCurrency = isSource == true ? self.viewModel?.destination : self.viewModel?.source
@@ -169,6 +172,7 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
         case .currency:
             
             return CGSize(width: collectionView.frame.width, height: 72.0)
+            
         case .details(let currency):
 
             return CurrencyDetailsCell.size(givenWidth: collectionView.frame.width, currency: currency)
@@ -182,6 +186,9 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
         self.navigationController?.popViewController(animated: true)
     }
     
+    /// Reloads the currency text field cell
+    /// - Parameter value: the currency amount
+    /// - Parameter currency: the currency to reload
     func reloadCell(value: String?, currency: Currency?) {
         
         if let currency = currency,
@@ -191,7 +198,7 @@ class CurrencyDetailViewController: JCollectionViewController<CurrencyDetailSect
             
             let price = Double(value ?? "0")
             
-            let convertedPrice = isSource ? price?.buy(currency: self.viewModel?.destination) : price?.convertTo(currency: self.viewModel?.destination)
+            let convertedPrice = isSource ? price?.convertBack(currency: self.viewModel?.destination) : price?.convertTo(currency: self.viewModel?.destination)
             
             cell.update(value: convertedPrice)
         }

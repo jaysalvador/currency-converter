@@ -20,6 +20,9 @@ class CurrencySelectCell: UICollectionViewCell {
     @IBOutlet
     private var borderView: UIView?
     
+    /// Prepares the cell based on currency
+    /// - Parameter currency: `Currency` object 
+    /// - Parameter isSelected: if `true`, will highlight the cell background
     func prepare(currency: Currency?, isSelected: Bool) -> UICollectionViewCell{
         
         self.accessibilityIdentifier = currency?.currencyCode
@@ -27,6 +30,10 @@ class CurrencySelectCell: UICollectionViewCell {
         return prepare(currency: currency?.description, image: currency?.image, isSelected: isSelected)
     }
     
+    /// Generic setup for this cell
+    /// - Parameter currency: sets the currency label
+    /// - Parameter image: sets the Image View
+    /// - Parameter isSelected: if `true`, will highlight the cell background
     func prepare(currency: String?, image: UIImage?, isSelected: Bool) -> UICollectionViewCell {
         
         self.backgroundColor = .clear
@@ -40,6 +47,7 @@ class CurrencySelectCell: UICollectionViewCell {
         return self
     }
     
+    /// Change the cell's UI based on  the defined`Theme`
     private func applyTheme(_ isSelected: Bool) {
         
         let theme = AppDelegate.shared?.theme ?? .standard

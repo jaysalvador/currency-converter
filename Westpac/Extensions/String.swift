@@ -12,7 +12,6 @@ import UIKit
 extension String {
 
     /// measuring String bounds in a rectangle
-    
     func boundingRect(with size: CGSize, options: NSStringDrawingOptions, font: UIFont) -> CGRect {
         
         return self.boundingRect(with: size, options: options, attributes: [.font: font], context: nil)

@@ -47,7 +47,7 @@ class ConversionTests: XCTestCase {
         
         let priceString = valueInNZD.toPriceString(currency: currencyNZD)
         
-        let reconvertToAUD = valueInNZD.buy(currency: currencyNZD)
+        let reconvertToAUD = valueInNZD.convertBack(currency: currencyNZD)
         
         XCTAssertTrue(currencies.count > 0, "No currencies retrieved from the API")
         
@@ -70,7 +70,7 @@ class ConversionTests: XCTestCase {
         
         let priceString = valueInPHP.toPriceString(currency: currencyPHP)
         
-        let reconvertToAUD = valueInPHP.buy(currency: currencyPHP)
+        let reconvertToAUD = valueInPHP.convertBack(currency: currencyPHP)
         
         XCTAssertTrue(currencies.count > 0, "No currencies retrieved from the API")
         
