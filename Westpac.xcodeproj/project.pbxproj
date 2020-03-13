@@ -380,9 +380,9 @@
 			isa = PBXGroup;
 			children = (
 				B5DDFDE92418AF8F007AD04B /* Bool.swift */,
+				B59EDDD3241A299800D979B1 /* Date.swift */,
 				B5AAF11C241855ED0034645A /* DateFormatter.swift */,
 				B5AAF12324185AAB0034645A /* DispatchQueue.swift */,
-				B59EDDD3241A299800D979B1 /* Date.swift */,
 				B5DDFDD924188311007AD04B /* Double.swift */,
 				B5AAF11A241855ED0034645A /* KeyedDecodingContainer.swift */,
 				B5AAF11B241855ED0034645A /* String.swift */,
@@ -948,7 +948,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55C8CE30AD97941AA29D747A /* Pods-Westpac.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconFX;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconFx;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MyFX-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -966,7 +966,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF991A5B580BCEB71315D295 /* Pods-Westpac.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconFX;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconFx;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MyFX-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
