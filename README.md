@@ -54,4 +54,4 @@ The app can be built in two different apps, with `Theme` property defined in the
 
 My coding style tends to have more indentation and spacing, similar to writing a term paper for easier reading.
 
-For more queries, please feel free to contact me at jay.andrae.salvador@gmail.com or +61433720289
+For more queries, please feel free to contact me at jay.andrae.salvador@gmail.com
