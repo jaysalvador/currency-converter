@@ -1,37 +1,57 @@
-#Mobile Application Assessment
+# Currency Converter
 
-As part of your application we invite you to complete the following coding assessment.
+Implementation using Westpac's FX API to do currency conversion
 
-##Overview
+## Currency Library
 
-The task we would like you to complete is to create an app that makes a call for international currency data (JSON) and use it to create a currency converter app that converts international currencies into Australian Dollars.  Refer to Apple's Human Interface Guidelines or Android's material design as a resource to provide a good customer experience.
+`Currency` is a static library that handles data retrieval and serialisation of the currency data to the `Currency` model, which is a `Codable` struct.
 
-##GitLab Usage
+Implemented `HttpClient` class to handle HTTP requests to the API and decodes the response to any `Decodable` type object.
 
-Please be sure to clone this repository into your own project to complete the assessment.
-Once the assessment is complete it should be shared back to madteam-devsupport with Developer access.
-It is important you retain ownership and access control of your assessment.
+All API responses will be conforming to this closure, using the `Result` type:
+>  `HttpCompletionClosure<T> = ((Result<T, HttpError>) -> Void)`
 
-##Requirements:
+`T` would need to conform to `Decodable` protocol, and errors will be extended using the `HttpError` enum states
 
-* The app must be written in Swift or Kotlin
-* The app must be written using Xcode 9+ for iOS or Android Studio for Android.
-* Use of suitable design patterns, and a strict separation of concerns when developing a mobile application
-* Create a library containing all functionality that could be reused by 3rd party developers in any application that requires exchange rate calculations. 3rd parties using this library should not be tightly coupled to any specific technology and should be able to consume the library in any way they choose
-* Code should be commented sufficiently to allow auto generation of library API documentation
-* Use all the data the API provided
-  * Asynchronous development principals when retrieving and displaying data originating from network calls
-* UI interaction and data binding principals
-  * Sound management of User Interface
-  * The application should be able to be re-branded (colours, fonts, assets) - 2 distinct branded targets/variants should be included in the project
-  * The app should be built with a universal UI.
-* Correct use of the application life cycle, management of the UI thread
-* Incremental Commits of code and proper use/understanding of gitflow
-  * Quick Overview - <http://nvie.com/posts/a-successful-git-branching-model/>
-  * In-depth Tutorial - <https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow>
-* Unit tests/mocks to demonstrate the code is testable
+Defined the response type to get an array of currencies to `CurrencyClient.CurrencyResponse` where its attribute contains `currencies` with type `[Currency]`. The decoder has been overridden to go through the inner dictionary `Rates` using `nestedContainer`. `CustomCodingKeys` has been defined to handle the dynamic keys for the currencies.
 
-##Getting Started
-* The URL to get the fx data is ``https://www.westpac.com.au/bin/getJsonRates.wbc.fx.json``.
-* For other platforms the use of frameworks, libraries, and open-source code is allowed – but please reference their use in comments in the code. Please use package management for open source dependencies where suitable.
+### Currency Helpers
 
+A few extensions have been overridden for easier conversion of `String`, `Date`, `Double` among others, in relation to a particular `Currency` model.
+
+All componentry in the app is driven by `UICollectionView` instead of `UITableView` for flexibility of cells and UI.
+
+## Client-side App
+
+The app architecture is built using the MVVM pattern and Protocol-oriented programming and Dependency Injection principles.
+
+### Theming
+
+There are two themes to this app, `standard` and `red`, defined in the `Theme` enum. 
+
+The app can be built in two different apps, with `Theme` property defined in the plist file. Each view/viewcontroller will be updated accordingly to these themes. 
+
+### Cocoapods Dependency
+
+[Dwifft](https://github.com/jflinter/Dwifft) library has been used in this project to handle `UICollectionView` reloading and refreshing. `Section` and `Item` types are provided to define the `UICollectionView` sections and items, and must adhere to `Equatable` protocol. These types will be used within the `Dwifft` library to easily compare and reload the collection and its cells.
+
+`JCollectionViewController` is class that extends `UIViewController` and implements `UICollectionView` delegates, and adheres to the `Dwifft` library implementation. The class provides easier access to sections and items of the collectionView by overriding the `UICollectionView` standard delegate functions to provide `Section` and `Item` type objects, abstracting the searching of the binded data using `IndexPath`
+
+## Testing
+
+`ConversionTests`
+- contains testing of API retrieval and mock data retrieval
+- tests conversion for USD, NZD and PHP
+
+`WestpacUITests`
+- `testCurrencyTextFields`
+  - testing for tapping the amount text field and entering 1000.0, filling up values and navigating the app to the currency detail view
+- `testCurrencySwitch`
+  - tests the currency switch button on the top right
+
+
+#### * Coding Style
+
+My coding style tends to have more indentation and spacing, similar to writing a term paper for easier reading.
+
+For more queries, please feel free to contact me at jay.andrae.salvador@gmail.com or +61433720289
