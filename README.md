@@ -2,6 +2,12 @@
 
 Implementation using Westpac's FX API to do currency conversion
 
+<p align="left">
+  <img src="https://github.com/jaysalvador/currency-converter/blob/master/images/img1.png" width="150" alt="accessibility text">
+
+  <img src="https://github.com/jaysalvador/currency-converter/blob/master/images/img2.png" width="150" alt="accessibility text">
+</p>
+
 ## Currency Library
 
 `Currency` is a static library that handles data retrieval and serialisation of the currency data to the `Currency` model, which is a `Codable` struct.
